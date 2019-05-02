@@ -3,10 +3,16 @@
   * {
     box-sizing: border-box;
   }
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
   .App {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    min-height: 450px;
+    overflow: hidden;
   }
 
   .title {
@@ -22,6 +28,7 @@
     display: flex;
     flex-direction: column;
     height: 80vh;
+    min-height: 450px;
   }
 
   .inner-container {
