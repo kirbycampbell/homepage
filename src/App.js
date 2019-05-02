@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
       <div className="main-container">
         <div className="inner-container">
           <div className="section">Resume</div>
-          <div className="section">Resume</div>
+          <div className="section">Portfolio</div>
         </div>
       </div>
     </div>
