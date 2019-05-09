@@ -16,35 +16,40 @@
     background: transparent; /* Optional: just make scrollbar invisible */
   }
 
-  .title {
-    padding: 20px 0 20px 0;
-    font-size: 34px;
-    border-bottom: 4px solid rgb(0, 0, 0);
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
-    height: 7.5vh;
-    min-height: 60px;
-    transition: all 0.7s ease;
-  }
-  .title-intro {
+  p.title-intro {
+    transition: all 1.2s ease;
     display: flex;
     padding: 20px 0 20px 0;
     font-size: 34px;
-
     border-bottom: 4px solid rgb(0, 0, 0);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
     height: 20vh;
     min-height: 60px;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
-  .title-intro-done {
+  p.title-intro.enter-done {
     padding: 20px 0 20px 0;
     font-size: 34px;
     border-bottom: 4px solid rgb(0, 0, 0);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
     height: 7.5vh;
+    justify-content: center;
+    align-items: center;
     min-height: 60px;
-    transition: all 0.7s ease;
+  }
+
+  p.title-intro.enter.enter-active {
+    padding: 20px 0 20px 0;
+    font-size: 34px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    height: 7.5vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    transition: all 1.2s ease;
   }
 
   .main-container {
@@ -56,6 +61,17 @@
     flex-direction: column;
     background: rgba(231, 219, 219, 0.514);
     height: 80vh;
+    min-height: 400px;
+  }
+  .main-container-start {
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(231, 219, 219, 0.514);
+    height: 67.5vh;
     min-height: 400px;
   }
 
@@ -110,7 +126,6 @@
   }
 
   .footer {
-    position: absolute;
     justify-content: center;
     align-items: center;
     display: flex;

@@ -18,19 +18,15 @@ function App() {
     <div className="App">
       <CSSTransition
         in={!introMsg}
-        timeout={300}
-        classNames="title-intro"
+        timeout={1000}
+        className="title-intro"
         unmountOnExit
       >
-        <React.Fragment>
-          <div className="title">
-            Hello. Welcome to Kirby Campbell's Home Page.
-          </div>
-        </React.Fragment>
+        <p>Hello. Welcome to Kirby Campbell's Home Page.</p>
       </CSSTransition>
       <CSSTransition
         in={!introMsg}
-        timeout={300}
+        timeout={1000}
         classNames="main-container"
         unmountOnExit
       >
@@ -46,22 +42,21 @@ function App() {
             </div>
           </div>
         </div>
-        {/* <div className="footer">Footer Butter</div> */}
       </CSSTransition>
-      <CSSTransition
-        in={introMsg}
-        timeout={300}
-        classNames="title-intro"
-        unmountOnExit
-      >
+      {introMsg && (
         <React.Fragment>
-          <div className="title-intro">
-            Hello. Welcome to Kirby Campbell's Home Page.
-          </div>
-          <div className="main-container " />
-          <div className="footer">Footer Butter</div>
+          <CSSTransition
+            in={introMsg}
+            timeout={1000}
+            className="title-intro"
+            unmountOnExit
+          >
+            <p>Hello. Welcome to Kirby Campbell's Home Page.</p>
+          </CSSTransition>
+          <div className="main-container-start " />
         </React.Fragment>
-      </CSSTransition>
+      )}
+      <div className="footer">Footer Butter</div>
     </div>
   );
 }
