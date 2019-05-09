@@ -7,7 +7,7 @@
   }
   .App {
     text-align: center;
-
+    min-height: 750px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
   }
@@ -21,6 +21,21 @@
     font-size: 34px;
     border-bottom: 4px solid rgb(0, 0, 0);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    height: 7.5vh;
+    min-height: 60px;
+    transition: all 0.7s ease;
+  }
+  .title--intro {
+    display: flex;
+    padding: 20px 0 20px 0;
+    font-size: 34px;
+
+    border-bottom: 4px solid rgb(0, 0, 0);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    height: 20vh;
+    min-height: 60px;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-container {
@@ -32,7 +47,7 @@
     flex-direction: column;
     background: rgba(231, 219, 219, 0.514);
     height: 80vh;
-    min-height: 650px;
+    min-height: 400px;
   }
 
   .inner-container {
@@ -53,6 +68,7 @@
     align-items: center;
     width: 90%;
     height: 100%;
+    animation-duration: 1.2s;
   }
 
   .section {
@@ -68,18 +84,30 @@
     cursor: pointer;
     user-select: none;
     border-radius: 10px;
-    box-shadow: 3px 3px 35px 2px rgb(1, 255, 98);
+    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.438);
     transition: all 0.7s ease;
+    animation-duration: 1.2s;
   }
 
   .section:hover {
     transition: all 0.7s ease;
 
     background: rgba(6, 12, 70, 0.455);
-    box-shadow: 0.5px 0.23px 50px 6px rgb(0, 81, 255);
+    box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
   }
 
   .section:active {
     box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
+  }
+
+  .footer {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 12.5vh;
+    bottom: 0;
+    background: rgba(170, 236, 248, 0.425);
   }
 }
