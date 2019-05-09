@@ -25,7 +25,7 @@
     min-height: 60px;
     transition: all 0.7s ease;
   }
-  .title--intro {
+  .title-intro {
     display: flex;
     padding: 20px 0 20px 0;
     font-size: 34px;
@@ -76,7 +76,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background: rgba(6, 12, 70, 0.356);
+    background: rgba(6, 12, 70, 0.658);
     color: white;
     width: 80%;
     height: 70%;

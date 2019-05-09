@@ -32,7 +32,7 @@ function App() {
       )}{" "}
       {introMsg && (
         <React.Fragment>
-          <div className="title--intro">
+          <div className="title-intro">
             Hello. Welcome to Kirby Campbell's Home Page.
           </div>
           <div className="main-container " />
