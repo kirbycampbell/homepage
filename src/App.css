@@ -37,6 +37,15 @@
     justify-content: center;
     align-items: center;
   }
+  .title-intro-done {
+    padding: 20px 0 20px 0;
+    font-size: 34px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    height: 7.5vh;
+    min-height: 60px;
+    transition: all 0.7s ease;
+  }
 
   .main-container {
     max-width: 1400px;
