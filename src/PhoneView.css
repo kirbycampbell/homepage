@@ -1,34 +1,37 @@
-/* PHONE SCREENS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+/* Phone SCREENS */
 @media only screen and (max-width: 900px) {
   * {
     box-sizing: border-box;
+  }
+  .App {
+    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
   }
   ::-webkit-scrollbar {
     width: 0px; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
   }
-  .App {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    min-height: 450px;
-    overflow: hidden;
-  }
 
   .title {
     padding: 20px 0 20px 0;
-    font-size: 24px;
+    font-size: 34px;
     border-bottom: 4px solid rgb(0, 0, 0);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
   }
 
   .main-container {
-    justify-content: center;
-    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+
     display: flex;
     flex-direction: column;
+    background: rgba(207, 21, 21, 0.514);
     height: 80vh;
-    min-height: 450px;
+    min-height: 650px;
   }
 
   .inner-container {
@@ -36,25 +39,35 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: rgba(207, 21, 21, 0.514);
-    width: 96%;
+
+    width: 100%;
     height: 80%;
-    border-radius: 20px;
+    border-radius: 30px;
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   .section {
-    font-size: 22px;
+    font-size: 32px;
     justify-content: center;
     align-items: center;
     display: flex;
     background: rgba(6, 12, 70, 0.356);
     color: white;
-    width: 70%;
-    height: 50%;
-    margin: 7% 0 7% 0;
+    width: 80%;
+    height: 70%;
+    margin: 30px 30px;
     cursor: pointer;
     user-select: none;
     border-radius: 10px;
+    box-shadow: 0.5px 0.23px 35px 2px blue;
   }
 
   .section:hover {
@@ -62,6 +75,6 @@
   }
 
   .section:active {
-    box-shadow: 3px 4px 10px 5px rgba(228, 181, 29, 0.486);
+    box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
   }
 }
