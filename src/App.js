@@ -59,6 +59,21 @@ function App() {
       </CSSTransition>
       <CSSTransition
         in={!introMsg}
+        timeout={1400}
+        classNames="social-section"
+        unmountOnExit
+      >
+        <div>
+          <i className="fab fa-google social-item" />
+          <i className="fab fa-github social-item" />
+          <i className="fab fa-twitter social-item" />
+          <i className="fab fa-linkedin social-item" />
+          <i className="fas fa-share-alt social-item" />
+          <i className="fab fa-spotify social-item" />
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={!introMsg}
         timeout={1000}
         classNames="main-container"
         unmountOnExit
@@ -66,7 +81,13 @@ function App() {
         <MainBoxes />
       </CSSTransition>
 
-      <div className="footer">Footer TO BE BUILT</div>
+      <div className="footer">
+        <p className="foot-text">Built w/ Love - by Kirby Campbell</p>
+        <p className="subscript">
+          <i className="far fa-copyright copyrighter" /> 2019
+        </p>
+        <img src="https://i.imgur.com/0sj2H2J.jpg" className="footer-img" />
+      </div>
     </div>
   );
 }
