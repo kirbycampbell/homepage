@@ -233,6 +233,7 @@
   p {
     margin: 0;
   }
+
   .section:hover {
     transition: all 0.7s ease;
     background: rgba(6, 12, 70, 0.455);
