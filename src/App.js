@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-// import "./PhoneView.css";
+import "./PhoneView.css";
 import useInterval from "./useInterval";
 import { CSSTransition } from "react-transition-group";
 import MainBoxes from "./MainBoxes";
