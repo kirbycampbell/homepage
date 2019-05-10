@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import "./PhoneView.css";
+import "../App.css";
+import "../CSS/PhoneView.css";
 
 const MainBoxes = () => {
   return (
