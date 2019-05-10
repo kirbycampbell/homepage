@@ -46,7 +46,10 @@
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    transition: all 1.2s ease;
+    transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
+    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
   }
   /* :::::::::::::::::: After Title Transition ::::::::::::::::::: */
   p.title-intro.enter-done {
@@ -70,7 +73,10 @@
     align-items: center;
     min-height: 60px;
     opacity: 0;
-    transition: all 3s;
+    transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
+    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
   }
   .title-intro.next.enter-active {
     position: absolute;
@@ -85,7 +91,10 @@
     min-height: 60px;
     top: 0;
     opacity: 0;
-    transition: all 2s ease-in-out;
+    transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
+    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
   }
   .title-intro.next.enter {
     position: absolute;
@@ -100,7 +109,10 @@
     min-height: 60px;
     top: 0;
     opacity: 0;
-    transition: all 2s ease-in-out;
+    transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
+    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
   }
   .title-intro.next.enter-done {
     display: flex;
@@ -112,7 +124,11 @@
     align-items: center;
     min-height: 60px;
     top: 0;
-    transition: all 2s ease-in-out;
+    opacity: 1;
+    transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
+    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
+      align-items 2s ease-in-out;
   }
 
   .second-title-bg {
@@ -223,13 +239,17 @@
     user-select: none;
     border-radius: 6px;
     box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
-    transition: all 0.7s ease;
+    transition: height 0.7s, margin 0.7s, width 0.7s, align-items 0.7s,
+      justify-content 0.7s ease;
+    -webkit-transition: height 0.7s, margin 0.7s, width 0.7s, align-items 0.7s,
+      justify-content 0.7s ease;
     animation-duration: 1.2s;
     overflow: hidden;
     z-index: 1000;
   }
   .section:hover {
-    transition: all 0.7s ease;
+    transition: background 0.3s, box-shadow 0.5s ease;
+    -webkit-transition: background 0.3s, box-shadow 0.5s ease;
     background: rgba(6, 12, 70, 0.455);
     box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
   }
@@ -243,6 +263,8 @@
     top: 0;
     object-fit: contain;
     /* filter: brightness(70%); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     filter: blur(3px);
     opacity: 0.6;
     z-index: -1;
@@ -253,6 +275,8 @@
     bottom: 0;
     left: 0;
     object-fit: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     filter: blur(3px);
     opacity: 0.6;
     z-index: -1;
@@ -273,7 +297,10 @@
       rgba(77, 255, 187, 0.147),
       rgba(77, 133, 255, 0)
     );
-    transition: all 2s ease-in-out;
+    transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
+    -webkit-transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
     margin: auto;
   }
   .social-section-enter {
@@ -288,7 +315,10 @@
       rgba(77, 255, 187, 0.147),
       rgba(77, 133, 255, 0)
     );
-    transition: all 2s ease-in-out;
+    transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
+    -webkit-transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
     margin: auto;
     opacity: 1;
   }
@@ -305,7 +335,10 @@
       rgba(77, 255, 187, 0.147),
       rgba(77, 133, 255, 0)
     );
-    transition: all 2s ease-in-out;
+    transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
+    -webkit-transition: height 2s, margin 2s, width 2s, align-items 2s,
+      justify-content 2s, opacity 2s ease;
     margin: auto;
     opacity: 0;
   }
