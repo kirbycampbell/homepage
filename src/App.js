@@ -66,7 +66,7 @@ function App() {
         <MainBoxes />
       </CSSTransition>
 
-      <div className="footer">Footer Butter</div>
+      <div className="footer">Footer TO BE BUILT</div>
     </div>
   );
 }

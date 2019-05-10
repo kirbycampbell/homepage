@@ -132,6 +132,11 @@
   }
 
   .second-text-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
     color: white;
     font-family: "Homemade Apple", cursive;
     font-size: 36px;
@@ -162,7 +167,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 67.5vh;
+    height: 2.5vh;
     min-height: 400px;
   }
   /* :::::::::::::::::: Final MIDDLE SECTION ::::::::::::::::::: */
@@ -173,7 +178,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 65.5vh;
     min-height: 400px;
   }
   /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
