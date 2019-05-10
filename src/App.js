@@ -3,71 +3,23 @@ import "./App.css";
 import "./PhoneView.css";
 import useInterval from "./useInterval";
 import { CSSTransition } from "react-transition-group";
+import MainBoxes from "./MainBoxes";
 
 function App() {
   const [introMsg, setIntroMsg] = useState(true);
   const [secondMsg, setSecondMsg] = useState(false);
+  const [newTitle, setNewTitle] = useState(false);
 
   useInterval(() => {
     if (introMsg) {
       setIntroMsg(false);
+    } else if (newTitle) {
       setSecondMsg(true);
     }
   }, 2000);
   return (
     <div className="App">
-      <CSSTransition
-        in={!introMsg}
-        timeout={1000}
-        className="title-intro"
-        unmountOnExit
-      >
-        <p>Hello. Welcome to Kirby Campbell's Home Page.</p>
-      </CSSTransition>
-      <CSSTransition
-        in={!introMsg}
-        timeout={1000}
-        classNames="main-container"
-        unmountOnExit
-      >
-        <div className="main-container ">
-          <div className="inner-container ">
-            <div className="column-container animated slideInDown">
-              <div className="section animated slideInLeft">
-                <p>Resume</p>
-                <img
-                  className="resume-img"
-                  src="https://i.imgur.com/DOlkeVw.jpg"
-                />
-              </div>
-              <div className="section animated slideInRight">
-                <p>Portfolio</p>{" "}
-                <img
-                  className="resume-img"
-                  src="https://i.imgur.com/7H6gShK.jpg"
-                />
-              </div>
-            </div>{" "}
-            <div className="column-container animated slideInUp  ">
-              <div className="section animated rotateInDownLeft">
-                <p>Blog</p>
-                <img
-                  className="resume-img"
-                  src="https://i.imgur.com/QUOFpG6.jpg"
-                />
-              </div>
-              <div className="section animated rotateInDownRight">
-                {" "}
-                <p>Bio</p>
-                <img
-                  className="bio-img"
-                  src="https://i.imgur.com/DOlkeVw.jpg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </CSSTransition>
+      {/*::::::::::::::::::::::::: PAGE INTRO VIEW ::::::::::::::::::::::::: */}
       {introMsg && (
         <React.Fragment>
           <CSSTransition
@@ -81,6 +33,39 @@ function App() {
           <div className="main-container-start " />
         </React.Fragment>
       )}
+      {/*::::::::::::::::::::::::: SETTLED PAGE VIEW ::::::::::::::::::::::::: */}
+
+      <CSSTransition
+        in={!introMsg && !secondMsg}
+        timeout={1400}
+        className="title-intro"
+        unmountOnExit
+        onEntered={() => setNewTitle(true)}
+      >
+        <p>Hello. Welcome to Kirby Campbell's Home Page.</p>
+      </CSSTransition>
+      <CSSTransition
+        in={secondMsg && !introMsg}
+        timeout={1400}
+        className="title-intro next"
+        unmountOnExit
+      >
+        <div>
+          <div className="second-title-bg" />
+          <p className="second-text-title">
+            Kirby Campbell. - - - - - - FullStack Web Developer.
+          </p>
+        </div>
+      </CSSTransition>
+      <CSSTransition
+        in={!introMsg}
+        timeout={1000}
+        classNames="main-container"
+        unmountOnExit
+      >
+        <MainBoxes />
+      </CSSTransition>
+
       <div className="footer">Footer Butter</div>
     </div>
   );
