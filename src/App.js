@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./App.css";
-import "./CSS/PhoneView.css";
 import useInterval from "./Functions/useInterval";
 import MainBoxes from "./Containers/MainBoxes";
 import SocialButtons from "./Containers/SocialButtons";
 import Titles from "./Containers/Titles";
 import Footer from "./Containers/Footer";
+import "./App.css";
+import "./CSS/PhoneView.css";
 
 function App() {
   const [introMsg, setIntroMsg] = useState(true);

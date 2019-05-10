@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../CSS/MainBoxes.css";
 import "../CSS/PhoneView.css";
 
 const MainBoxes = () => {

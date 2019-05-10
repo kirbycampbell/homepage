@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../CSS/SocialButtons.css";
 import "../CSS/PhoneView.css";
 import { CSSTransition } from "react-transition-group";
 

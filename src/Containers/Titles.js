@@ -1,6 +1,5 @@
 import React from "react";
-import "../App.css";
-import "../CSS/PhoneView.css";
+import "../CSS/Titles.css";
 import { CSSTransition } from "react-transition-group";
 
 const Titles = props => {

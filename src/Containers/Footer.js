@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../CSS/Footer.css";
 import "../CSS/PhoneView.css";
 var emoji = require("node-emoji");
 
