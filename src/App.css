@@ -267,6 +267,7 @@
     -moz-background-size: cover;
     filter: blur(3px);
     opacity: 0.6;
+    overflow: hidden;
     z-index: -1;
   }
   .bio-img {
@@ -279,6 +280,7 @@
     -moz-background-size: cover;
     filter: blur(3px);
     opacity: 0.6;
+    overflow: hidden;
     z-index: -1;
   }
 
