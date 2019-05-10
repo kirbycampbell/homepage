@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import "./PhoneView.css";
+// import "./PhoneView.css";
 import useInterval from "./useInterval";
 import { CSSTransition } from "react-transition-group";
 import MainBoxes from "./MainBoxes";
+var emoji = require("node-emoji");
 
 function App() {
   const [introMsg, setIntroMsg] = useState(true);
@@ -65,11 +66,28 @@ function App() {
       >
         <div>
           <i className="fab fa-google social-item" />
-          <i className="fab fa-github social-item" />
-          <i className="fab fa-twitter social-item" />
-          <i className="fab fa-linkedin social-item" />
-          <i className="fas fa-share-alt social-item" />
-          <i className="fab fa-spotify social-item" />
+          <a href="https://github.com/kirbycampbell" className="linker">
+            <i className="fab fa-github social-item" />
+          </a>
+          <a href="https://twitter.com/CoderDabe1000" className="linker">
+            <i className="fab fa-twitter social-item" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jkirbycampbell/"
+            className="linker"
+          >
+            <i className="fab fa-linkedin social-item" />
+          </a>
+          <a href="https://github.com/kirbycampbell" className="linker">
+            <i className="fas fa-share-alt social-item" />
+          </a>
+          <a
+            href="https://open.spotify.com/playlist/5ieGTsbB6X0QlfGmJR7Grs"
+            target="_blank"
+            className="linker"
+          >
+            <i className="fab fa-spotify social-item" />
+          </a>
         </div>
       </CSSTransition>
       <CSSTransition
@@ -82,11 +100,17 @@ function App() {
       </CSSTransition>
 
       <div className="footer">
-        <p className="foot-text">Built w/ Love - by Kirby Campbell</p>
+        <p className="foot-text">
+          Built w/ {emoji.get("heart")} - by Kirby Campbell
+        </p>
         <p className="subscript">
           <i className="far fa-copyright copyrighter" /> 2019
         </p>
-        <img src="https://i.imgur.com/0sj2H2J.jpg" className="footer-img" />
+        <img
+          src="https://i.imgur.com/0sj2H2J.jpg"
+          alt="panoOfPortlandOr"
+          className="footer-img"
+        />
       </div>
     </div>
   );
