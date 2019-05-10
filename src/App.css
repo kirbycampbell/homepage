@@ -23,8 +23,9 @@
     font-size: 34px;
     border-bottom: 4px solid rgb(0, 0, 0);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
-    height: 20vh;
+    height: 100vh;
     min-height: 60px;
+    background: white;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -59,7 +60,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: rgba(231, 219, 219, 0.514);
+
     height: 80vh;
     min-height: 400px;
   }
@@ -70,7 +71,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: rgba(231, 219, 219, 0.514);
+
     height: 67.5vh;
     min-height: 400px;
   }
@@ -96,22 +97,47 @@
     animation-duration: 1.2s;
   }
 
+  .resume-img {
+    position: absolute;
+    width: 123%;
+    top: 0;
+    object-fit: contain;
+    /* filter: brightness(70%); */
+    filter: blur(3px);
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  .bio-img {
+    position: absolute;
+    width: 140%;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+    /* filter: brightness(20%); */
+    filter: blur(3px);
+    opacity: 0.6;
+    z-index: -1;
+  }
+
   .section {
     font-size: 32px;
     justify-content: center;
     align-items: center;
     display: flex;
-    background: rgba(6, 12, 70, 0.658);
-    color: white;
+    /* background: rgba(40, 45, 99, 0.76);
+    color: white; */
     width: 80%;
     height: 70%;
     margin: 30px 30px;
     cursor: pointer;
     user-select: none;
-    border-radius: 10px;
-    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.438);
+    border-radius: 6px;
+    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
     transition: all 0.7s ease;
     animation-duration: 1.2s;
+    overflow: hidden;
+    z-index: 1000;
   }
 
   .section:hover {
