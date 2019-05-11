@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel|Cousine|Homemade+Apple|Marck+Script|Maven+Pro|Poiret+One|Unica+One");
+
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 900px) {
+  .column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    animation-duration: 1.9s;
+  }
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* :::::::::::::::::::::::::: INNER BOXES :::::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  .section {
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    height: 70%;
+    margin: 30px 30px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
+    transition: all 1.3s ease;
+    animation-duration: 2.3s;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  .section:hover {
+    transition: all 0.7s ease;
+    background: rgba(6, 12, 70, 0.455);
+    box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
+    z-index: 1000;
+  }
+  .section:active {
+    box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
+  }
+  /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
+  .resume-img {
+    position: absolute;
+    width: 123%;
+    top: 0;
+    object-fit: contain;
+
+    filter: blur(3px);
+    opacity: 0.6;
+    overflow: hidden;
+    z-index: -1000;
+  }
+  .bio-img {
+    position: absolute;
+    width: 140%;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+
+    filter: blur(3px);
+    opacity: 0.6;
+    overflow: hidden;
+    z-index: -1000;
+  }
+}

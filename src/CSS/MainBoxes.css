@@ -29,8 +29,9 @@
     height: 58vh;
     min-height: 400px;
   }
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   /* :::::::::::::::::: CENTER BOX OF MIDDLE SECTION ::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -43,75 +44,14 @@
     height: 90%;
     border-radius: 30px;
   }
-  .column-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 100%;
-    animation-duration: 1.2s;
-  }
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  /* :::::::::::::::::::::::::: INNER BOXES :::::::::::::::::::::::::::: */
-  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  .section {
-    font-size: 32px;
+  .main-container.move-bar {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     width: 80%;
-    height: 70%;
-    margin: 30px 30px;
-    cursor: pointer;
-    user-select: none;
-    border-radius: 6px;
-    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
-    transition: height 0.7s, margin 0.7s, width 0.7s, align-items 0.7s,
-      justify-content 0.7s ease;
-    -webkit-transition: height 0.7s, margin 0.7s, width 0.7s, align-items 0.7s,
-      justify-content 0.7s ease;
-    animation-duration: 1.2s;
-    overflow: hidden;
-    z-index: 1000;
-  }
-  .section:hover {
-    transition: background 0.3s, box-shadow 0.5s ease;
-    -webkit-transition: background 0.3s, box-shadow 0.5s ease;
-    background: rgba(6, 12, 70, 0.455);
-    box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
-  }
-  .section:active {
-    box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
-  }
-  /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
-  .resume-img {
-    position: absolute;
-    width: 123%;
-    top: 0;
-    object-fit: contain;
-    /* filter: brightness(70%); */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    filter: blur(3px);
-    opacity: 0.6;
-    overflow: hidden;
-    z-index: -1;
-  }
-  .bio-img {
-    position: absolute;
-    width: 140%;
-    bottom: 0;
-    left: 0;
-    object-fit: contain;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    filter: blur(3px);
-    opacity: 0.6;
-    overflow: hidden;
-    z-index: -1;
+    height: 60%;
+    border-radius: 30px;
   }
 }

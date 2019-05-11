@@ -30,10 +30,7 @@
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
-    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
   /* :::::::::::::::::: After Title Transition ::::::::::::::::::: */
   p.title-intro.enter-done {
@@ -57,10 +54,7 @@
     align-items: center;
     min-height: 60px;
     opacity: 0;
-    transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
-    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
   .title-intro.next.enter-active {
     position: absolute;
@@ -75,10 +69,7 @@
     min-height: 60px;
     top: 0;
     opacity: 0;
-    transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
-    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
   .title-intro.next.enter {
     position: absolute;
@@ -93,10 +84,7 @@
     min-height: 60px;
     top: 0;
     opacity: 0;
-    transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
-    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
   .title-intro.next.enter-done {
     display: flex;
@@ -109,10 +97,7 @@
     min-height: 60px;
     top: 0;
     opacity: 1;
-    transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
-    -webkit-transition: height 2s, opacity 2s, justify-content 2s,
-      align-items 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 
   .second-title-bg {

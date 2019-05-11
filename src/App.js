@@ -26,8 +26,8 @@ function App() {
         secondMsg={secondMsg}
         setNewTitle={setNewTitle}
       />
-      <SocialButtons introMsg={!introMsg} />
-      <MainBoxes />
+      <SocialButtons introMsg={introMsg} />
+      <MainBoxes introMsg={introMsg} secondMsg={secondMsg} />
       <Footer />
     </div>
   );

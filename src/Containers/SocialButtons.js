@@ -6,7 +6,7 @@ import { CSSTransition } from "react-transition-group";
 const SocialButtons = props => {
   return (
     <CSSTransition
-      in={props.introMsg}
+      in={!props.introMsg}
       timeout={1400}
       classNames="social-section"
       unmountOnExit
@@ -31,6 +31,7 @@ const SocialButtons = props => {
         <a
           href="https://open.spotify.com/playlist/5ieGTsbB6X0QlfGmJR7Grs"
           target="_blank"
+          rel="noopener noreferrer"
           className="linker"
         >
           <i className="fab fa-spotify social-item" />
