@@ -7,33 +7,50 @@ const BarBoxies = props => {
     <React.Fragment>
       <div className="column-container-move">
         <div
-          className="section-move"
+          className={
+            props.viewedItem === "resume"
+              ? "section-move active"
+              : "section-move"
+          }
           onClick={() => props.handleBarClick("resume")}
         >
           <p>Resume</p>
         </div>
         <div
-          className="section-move"
+          className={
+            props.viewedItem === "portfolio"
+              ? "section-move active"
+              : "section-move"
+          }
           onClick={() => props.handleBarClick("portfolio")}
         >
           <p>Portfolio</p>{" "}
         </div>
 
         <div
-          className="section-move"
+          className={
+            props.viewedItem === "blog" ? "section-move active" : "section-move"
+          }
           onClick={() => props.handleBarClick("blog")}
         >
           <p>Blog</p>
         </div>
         <div
-          className="section-move"
+          className={
+            props.viewedItem === "bio" ? "section-move active" : "section-move"
+          }
           onClick={() => props.handleBarClick("bio")}
         >
           {" "}
           <p>Bio</p>
         </div>
       </div>
-      <div className="ole-container">Take Up the space</div>
+      <div className="ole-container">
+        <div>
+          <i className="fas fa-times x-button" onClick={props.Xout} />
+        </div>
+        {props.viewedItem}{" "}
+      </div>
     </React.Fragment>
   );
 };

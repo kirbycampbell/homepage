@@ -16,7 +16,12 @@ const MainBoxes = props => {
   };
 
   const handleBarClick = topic => {
-    console.log(topic);
+    setViewedItem(topic);
+  };
+
+  const Xout = () => {
+    setFadeNew(false);
+    setBar(false);
   };
   return (
     <div>
@@ -35,7 +40,12 @@ const MainBoxes = props => {
       {/* :::::::::::::::::::::::: BAR of BUTTONS :::::::::::::::::::::::::: */}
       <CSSTransition in={fadeNew} className="new-bar" timeout={0} unmountOnExit>
         <div className="main-container ">
-          <BarBoxies handleBarClick={handleBarClick} />
+          <BarBoxies
+            handleBarClick={handleBarClick}
+            viewedItem={viewedItem}
+            Xout={Xout}
+            viewedItem={viewedItem}
+          />
         </div>
       </CSSTransition>
     </div>
