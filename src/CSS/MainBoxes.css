@@ -28,7 +28,10 @@
     flex-direction: column;
     height: 58vh;
     min-height: 400px;
+    opacity: 1;
+    transition: all 2s ease;
   }
+
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -43,15 +46,35 @@
     width: 80%;
     height: 90%;
     border-radius: 30px;
+    animation-duration: 0.7s;
+    transition: all 2s ease;
   }
 
-  .main-container.move-bar {
+  .new-bar {
+    max-width: 1400px;
+    margin: auto;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 60%;
-    border-radius: 30px;
+    height: 58vh;
+
+    transition: all 2s ease;
+  }
+
+  .new-bar.enter-done {
+    display: flex;
+    height: 56.5vh;
+    margin: auto;
+    padding: 10px 0 0 0;
+    transition: all 1s ease;
+  }
+
+  .new-bar.enter-done {
+    display: flex;
+    height: 58.5vh;
+    margin: auto;
+    padding: 10px 0 0 0;
+    transition: all 1s ease;
   }
 }

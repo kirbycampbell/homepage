@@ -8,8 +8,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     width: 90%;
-    height: 20%;
+    height: 10%;
     animation-duration: 1.9s;
     transition: all 2s ease;
   }
@@ -17,13 +18,13 @@
   /* :::::::::::::::::::::::::: INNER BOXES :::::::::::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   .section-move {
-    font-size: 32px;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
     width: 80%;
-    height: 70%;
-    margin: 30px 30px;
+    height: 3vh;
+    margin: 5px;
     cursor: pointer;
     user-select: none;
     border-radius: 6px;
@@ -32,6 +33,9 @@
     animation-duration: 2.3s;
     overflow: hidden;
     z-index: 1000;
+  }
+  p {
+    margin: 0;
   }
   .section-move:hover {
     transition: all 0.7s ease;
@@ -42,27 +46,8 @@
   .section-move:active {
     box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
   }
-  /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
-  .resume-img-move {
-    position: absolute;
-    width: 123%;
-    top: 0;
-    object-fit: contain;
 
-    filter: blur(3px);
-    opacity: 0.6;
-    overflow: hidden;
-    z-index: -1000;
-  }
-  .bio-img-move {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    object-fit: contain;
-    filter: blur(3px);
-    opacity: 0.6;
-    overflow: hidden;
-    z-index: -1000;
+  .ole-container {
+    margin: auto;
   }
 }

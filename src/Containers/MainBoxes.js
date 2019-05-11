@@ -8,6 +8,7 @@ import BarBoxies from "./BarBoxies";
 const MainBoxes = props => {
   const [bar, setBar] = useState(false);
   const [viewedItem, setViewedItem] = useState("");
+  const [fadeNew, setFadeNew] = useState(false);
 
   const handleClick = item => {
     setViewedItem(item);
@@ -18,27 +19,24 @@ const MainBoxes = props => {
     console.log(topic);
   };
   return (
-    <div className="main-container ">
+    <div>
       {/* :::::::::::::::::: UNCLICKED MAIN BOX SECTION :::::::::::::::::::: */}
-      {!bar && (
-        <CSSTransition
-          in={!props.introMsg && !bar}
-          className="inner-container "
-          timeout={1000}
-          unmountOnExit
-        >
-          <InnerBoxies handleClick={handleClick} />
-        </CSSTransition>
-      )}
-
-      {/* :::::::::::::::::::::::: BAR of BUTTONS :::::::::::::::::::::::::: */}
       <CSSTransition
-        in={!props.introMsg && bar}
-        className="main-container move-bar "
-        timeout={2500}
+        in={!props.introMsg && !bar}
+        timeout={0}
+        onExited={() => setFadeNew(true)}
         unmountOnExit
       >
-        <BarBoxies handleBarClick={handleBarClick} />
+        <div className="main-container ">
+          <InnerBoxies handleClick={handleClick} />
+        </div>
+      </CSSTransition>
+
+      {/* :::::::::::::::::::::::: BAR of BUTTONS :::::::::::::::::::::::::: */}
+      <CSSTransition in={fadeNew} className="new-bar" timeout={0} unmountOnExit>
+        <div className="main-container ">
+          <BarBoxies handleBarClick={handleBarClick} />
+        </div>
       </CSSTransition>
     </div>
   );
