@@ -51,6 +51,11 @@ const BarBoxies = props => {
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
         {props.viewedItem === "blog" && <PostContainer />}
+        {props.viewedItem !== "blog" && (
+          <div style={{ "font-size": "50px" }}>
+            {props.viewedItem.toUpperCase()}
+          </div>
+        )}
       </div>
     </React.Fragment>
   );

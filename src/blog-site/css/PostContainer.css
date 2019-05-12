@@ -95,11 +95,8 @@
   .boxerson {
     overflow: hidden;
     float: left;
-    justify-content: center;
-    align-items: center;
-    display: block;
     height: 47%;
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-top: 20px;
   }
