@@ -50,6 +50,7 @@
   .ole-container {
     margin: auto;
     height: 100%;
+    display: block;
     width: 100%;
     transition: all 2s ease;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/BarBoxies.css";
 import "../CSS/PhoneView.css";
+import PostContainer from "../blog-site/containers/PostContainer";
 
 const BarBoxies = props => {
   return (
@@ -49,7 +50,7 @@ const BarBoxies = props => {
         <div>
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
-        {props.viewedItem}{" "}
+        {props.viewedItem === "blog" && <PostContainer />}
       </div>
     </React.Fragment>
   );
