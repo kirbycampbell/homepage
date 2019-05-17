@@ -19,6 +19,7 @@ function App() {
       setSecondMsg(true);
     }
   }, 2000);
+
   return (
     <div className="App">
       <Titles
