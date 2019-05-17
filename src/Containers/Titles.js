@@ -10,33 +10,31 @@ const Titles = props => {
   const [titleName, setTitleName] = useState("title-start");
   const [titleName2, setTitleName2] = useState("sec-title-start");
 
+  //Intro Message gets timer1 going for Initial Move
   useEffect(() => {
-    //Intro Message gets timer1 going for Initial Move
     setRunTimer(true);
   }, [props.introMsg]);
 
   useInterval(() => {
-    // General Timer, adding 1 to both timers each second.
     if (runTimer) {
+      // Timer 1 (Intro Title)
       setTimer(timer + 1);
-    }
-  }, 1000);
-
-  useEffect(() => {
-    // Sets First title's className to end of animation name.
-    if (timer >= 2) {
-      setTitleName("title-end");
-      setRunTimer(false);
-      setRunTimer2(true);
-    }
-  }, [timer]);
-
-  useInterval(() => {
-    if (runTimer2) {
+    } else if (runTimer2) {
+      // Timer 2 (Plant Image + Cursive Title)
       setTimer2(timer2 + 1);
     }
   }, 1000);
 
+  // FIRST TIMER for STARTING TITLE
+  useEffect(() => {
+    if (timer >= 2) {
+      setTitleName("title-end");
+      setRunTimer(false); // Ends Timer Run
+      setRunTimer2(true); // Starts Timer 2 Run
+    }
+  }, [timer]);
+
+  // SECOND TIMER for MAIN LAYOUT Routine
   useEffect(() => {
     if (timer2 >= 3) {
       setTitleName2("sec-title-end");

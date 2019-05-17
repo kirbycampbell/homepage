@@ -28,8 +28,8 @@ function App() {
         setNewTitle={setNewTitle}
       />
       <div className="body-space">
-        {/* <SocialButtons introMsg={introMsg} />
-      <MainBoxes introMsg={introMsg} secondMsg={secondMsg} /> */}
+        <SocialButtons introMsg={introMsg} />
+        <MainBoxes introMsg={introMsg} secondMsg={secondMsg} />
       </div>
       <Footer />
     </div>

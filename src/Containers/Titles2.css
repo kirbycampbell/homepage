@@ -48,7 +48,7 @@
   position: relative;
   border-bottom: 4px solid rgb(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  transition: height 1.2s, opacity 1.2s, border-bottom 1.2s ease-in-out;
+  transition: height 1.2s, opacity 1.2s ease-in-out;
 }
 
 .second-title-bg {
