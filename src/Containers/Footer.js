@@ -6,12 +6,12 @@ var emoji = require("node-emoji");
 const Footer = () => {
   return (
     <div className="footer">
-      <p className="foot-text">
+      <div className="foot-text">
         Built w/ {emoji.get("heart")} - by Kirby Campbell
-      </p>
-      <p className="subscript">
+      </div>
+      <div className="subscript">
         <i className="far fa-copyright copyrighter" /> 2019
-      </p>
+      </div>
       <img
         src="https://i.imgur.com/0sj2H2J.jpg"
         alt="panoOfPortlandOr"

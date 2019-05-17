@@ -6,13 +6,27 @@
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   /* :::::::::::::::::::::::::: FOOTER SECTION :::::::::::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  .footer-img {
+    position: absolute;
+    filter: brightness(20%);
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background: center center;
+    opacity: 0.3;
+    z-index: -1;
+    filter: hue-rotate(10deg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
   .footer {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 12.5vh;
+    height: 15vh;
     bottom: 0;
     background: rgba(7, 27, 31, 0.76);
     z-index: 100;
@@ -22,42 +36,18 @@
     margin: auto;
   }
 
-  .footer-img {
-    position: absolute;
-    filter: brightness(20%);
-    display: flex;
-    width: 100%;
-    height: 12.5vh;
-
-    background: center center;
-    opacity: 0.3;
-    z-index: -1;
-    filter: hue-rotate(10deg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
   .foot-text {
-    display: flex;
     margin: 10px;
-    justify-content: center;
-    align-items: center;
   }
   .subscript {
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     width: 100%;
-    margin-top: 40px;
     font-size: 14px;
     font-weight: normal;
   }
   .copyrighter {
     margin: 0 10px;
   }
-  .linker {
+  /* .linker {
     text-decoration: none;
     margin: 0px 5%;
   }
@@ -66,5 +56,5 @@
     color: blue;
     z-index: 2;
     opacity: 1;
-  }
+  } */
 }
