@@ -5,11 +5,8 @@ import "../CSS/PhoneView.css";
 const InnerBoxies = props => {
   return (
     <React.Fragment>
-      <div className="column-container animated slideInDown">
-        <div
-          className="section animated slideInLeft"
-          onClick={() => props.handleClick("resume")}
-        >
+      <div className="column-container">
+        <div className="section" onClick={() => props.handleClick("resume")}>
           <p>Resume</p>
           <div className="image-box">
             <img
@@ -20,7 +17,7 @@ const InnerBoxies = props => {
           </div>
         </div>
         <div
-          className="section animated slideInRight"
+          className="section "
           onClick={() => props.handleClick("portfolio")}
         >
           <p>Portfolio</p>{" "}
@@ -33,11 +30,8 @@ const InnerBoxies = props => {
           </div>
         </div>
       </div>
-      <div className="column-container animated slideInUp  ">
-        <div
-          className="section animated rotateInDownLeft"
-          onClick={() => props.handleClick("blog")}
-        >
+      <div className="column-container    ">
+        <div className="section  " onClick={() => props.handleClick("blog")}>
           <p>Blog</p>
           <div className="image-box">
             <img
@@ -49,8 +43,8 @@ const InnerBoxies = props => {
         </div>
         <div className="section" onClick={() => props.handleClick("bio")}>
           {" "}
-          <p>Bio</p>
           <div className="image-box">
+            <p>Bio</p>
             <img
               className="bio-img"
               src="https://i.imgur.com/vPQsa6M.jpg"

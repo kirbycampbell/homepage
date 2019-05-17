@@ -26,8 +26,10 @@ function App() {
         secondMsg={secondMsg}
         setNewTitle={setNewTitle}
       />
-      <SocialButtons introMsg={introMsg} />
-      <MainBoxes introMsg={introMsg} secondMsg={secondMsg} />
+      <div className="body-space">
+        {/* <SocialButtons introMsg={introMsg} />
+      <MainBoxes introMsg={introMsg} secondMsg={secondMsg} /> */}
+      </div>
       <Footer />
     </div>
   );

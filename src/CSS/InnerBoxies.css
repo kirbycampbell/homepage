@@ -9,9 +9,8 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 100%;
+    height: 40vh;
     animation-duration: 1.9s;
-
     z-index: 1000;
   }
 
@@ -22,6 +21,7 @@
   /* :::::::::::::::::::::::::: INNER BOXES :::::::::::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   .section {
+    color: white;
     font-size: 32px;
     justify-content: center;
     align-items: center;
@@ -34,11 +34,6 @@
     border-radius: 6px;
     box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
     transition: all 1.3s ease;
-
-    overflow: hidden;
-    color: white;
-    text-shadow: 0px 0px 2px;
-    background: rgba(218, 218, 241, 0.829);
     overflow: hidden;
     border-radius: 10px;
     -webkit-border-radius: 12px;
@@ -46,21 +41,30 @@
   .section:hover {
     transition: all 0.7s ease;
     background: rgba(6, 12, 70, 0.455);
+    text-shadow: 0px 0px 6px;
     box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
   }
   .section:active {
     box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
   }
   /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
+  .image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
   .resume-img {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: auto;
     filter: blur(2px);
     opacity: 1;
-    transform: translate(0%, 40%);
+    transform: translate(0%, 0%);
     z-index: -1000;
   }
   .bio-img {
@@ -70,14 +74,14 @@
     left: 0;
     filter: blur(2px);
     opacity: 1;
-    transform: translate(0%, 40%);
+    transform: translate(0%, 0%);
     z-index: -1000;
   }
 
-  .image-box {
+  p {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

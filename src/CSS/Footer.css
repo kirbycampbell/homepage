@@ -39,6 +39,7 @@
   }
 
   .foot-text {
+    display: flex;
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,7 @@
     align-items: center;
     display: flex;
     width: 100%;
+    margin-top: 40px;
     font-size: 14px;
     font-weight: normal;
   }
