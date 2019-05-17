@@ -34,12 +34,12 @@
     border-radius: 6px;
     box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
     transition: all 1.3s ease;
-    animation-duration: 2.3s;
+
     overflow: hidden;
     color: white;
     text-shadow: 0px 0px 2px;
     background: rgba(218, 218, 241, 0.829);
-    overflow: auto;
+    overflow: hidden;
     border-radius: 10px;
     -webkit-border-radius: 12px;
   }

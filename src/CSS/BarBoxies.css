@@ -17,6 +17,7 @@
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   /* :::::::::::::::::::::::::: INNER BOXES :::::::::::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
   .section-move {
     font-size: 20px;
     justify-content: center;
@@ -45,6 +46,12 @@
   }
   .section-move:active {
     box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
+  }
+
+  .inner-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .ole-container {

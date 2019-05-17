@@ -47,10 +47,7 @@ const InnerBoxies = props => {
             />{" "}
           </div>
         </div>
-        <div
-          className="section animated rotateInDownRight"
-          onClick={() => props.handleClick("bio")}
-        >
+        <div className="section" onClick={() => props.handleClick("bio")}>
           {" "}
           <p>Bio</p>
           <div className="image-box">
