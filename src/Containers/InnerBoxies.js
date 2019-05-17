@@ -14,7 +14,7 @@ const InnerBoxies = props => {
           <div className="image-box">
             <img
               className="resume-img"
-              src="https://i.imgur.com/DOlkeVw.jpg"
+              src="https://i.imgur.com/iuF70IT.jpg"
               alt="resume"
             />{" "}
           </div>
@@ -27,7 +27,7 @@ const InnerBoxies = props => {
           <div className="image-box">
             <img
               className="resume-img"
-              src="https://i.imgur.com/7H6gShK.jpg"
+              src="https://i.imgur.com/kvk4CEA.jpg"
               alt="portfolio"
             />
           </div>
@@ -42,7 +42,7 @@ const InnerBoxies = props => {
           <div className="image-box">
             <img
               className="resume-img"
-              src="https://i.imgur.com/QUOFpG6.jpg"
+              src="https://i.imgur.com/FG2NclR.jpg"
               alt="blog"
             />{" "}
           </div>
@@ -56,7 +56,7 @@ const InnerBoxies = props => {
           <div className="image-box">
             <img
               className="bio-img"
-              src="https://i.imgur.com/DOlkeVw.jpg"
+              src="https://i.imgur.com/vPQsa6M.jpg"
               alt="bio"
             />{" "}
           </div>
