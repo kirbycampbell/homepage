@@ -11,22 +11,26 @@ const InnerBoxies = props => {
           onClick={() => props.handleClick("resume")}
         >
           <p>Resume</p>
-          <img
-            className="resume-img"
-            src="https://i.imgur.com/DOlkeVw.jpg"
-            alt="resume"
-          />
+          <div className="image-box">
+            <img
+              className="resume-img"
+              src="https://i.imgur.com/DOlkeVw.jpg"
+              alt="resume"
+            />{" "}
+          </div>
         </div>
         <div
           className="section animated slideInRight"
           onClick={() => props.handleClick("portfolio")}
         >
           <p>Portfolio</p>{" "}
-          <img
-            className="resume-img"
-            src="https://i.imgur.com/7H6gShK.jpg"
-            alt="portfolio"
-          />
+          <div className="image-box">
+            <img
+              className="resume-img"
+              src="https://i.imgur.com/7H6gShK.jpg"
+              alt="portfolio"
+            />
+          </div>
         </div>
       </div>
       <div className="column-container animated slideInUp  ">
@@ -35,11 +39,13 @@ const InnerBoxies = props => {
           onClick={() => props.handleClick("blog")}
         >
           <p>Blog</p>
-          <img
-            className="resume-img"
-            src="https://i.imgur.com/QUOFpG6.jpg"
-            alt="blog"
-          />
+          <div className="image-box">
+            <img
+              className="resume-img"
+              src="https://i.imgur.com/QUOFpG6.jpg"
+              alt="blog"
+            />{" "}
+          </div>
         </div>
         <div
           className="section animated rotateInDownRight"
@@ -47,11 +53,13 @@ const InnerBoxies = props => {
         >
           {" "}
           <p>Bio</p>
-          <img
-            className="bio-img"
-            src="https://i.imgur.com/DOlkeVw.jpg"
-            alt="bio"
-          />
+          <div className="image-box">
+            <img
+              className="bio-img"
+              src="https://i.imgur.com/DOlkeVw.jpg"
+              alt="bio"
+            />{" "}
+          </div>
         </div>
       </div>
     </React.Fragment>
