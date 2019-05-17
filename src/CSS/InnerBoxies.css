@@ -11,6 +11,8 @@
     width: 90%;
     height: 100%;
     animation-duration: 1.9s;
+    overflow: hidden;
+    z-index: 1000;
   }
 
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -34,13 +36,12 @@
     transition: all 1.3s ease;
     animation-duration: 2.3s;
     overflow: hidden;
-    z-index: 1000;
+    background: rgba(24, 24, 92, 0.295);
   }
   .section:hover {
     transition: all 0.7s ease;
     background: rgba(6, 12, 70, 0.455);
     box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
-    z-index: 1000;
   }
   .section:active {
     box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
@@ -48,25 +49,27 @@
   /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
   .resume-img {
     position: absolute;
-    width: 123%;
-    top: 0;
-    object-fit: contain;
-
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-clip: content-box;
     filter: blur(3px);
-    opacity: 0.6;
+    opacity: 0.3;
     overflow: hidden;
     z-index: -1000;
   }
   .bio-img {
     position: absolute;
-    width: 140%;
+    width: 100%;
     bottom: 0;
     left: 0;
-    object-fit: contain;
+    background-clip: content-box;
 
     filter: blur(3px);
-    opacity: 0.6;
+    opacity: 0.9;
     overflow: hidden;
     z-index: -1000;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 100% 100%);
   }
 }
