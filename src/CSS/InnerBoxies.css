@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel|Cousine|Homemade+Apple|Marck+Script|Maven+Pro|Poiret+One|Unica+One");
 
 /* DESKTOP SCREENS */
-@media only screen and (min-width: 899px) {
+@media only screen and (min-width: 900px) {
   .column-container {
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@
     cursor: pointer;
     user-select: none;
     border-radius: 6px;
-    box-shadow: 3px 3px 35px 2px rgba(170, 37, 37, 0.253);
+    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
     transition: all 1.3s ease;
     overflow: hidden;
     border-radius: 10px;
@@ -60,10 +60,8 @@
   .resume-img {
     position: absolute;
     width: 100%;
-    height: 100%;
     bottom: 0;
     left: 0;
-    top: 0;
     filter: blur(2px);
     opacity: 1;
     transform: translate(0%, 0%);
@@ -72,7 +70,6 @@
   .bio-img {
     position: absolute;
     width: 100%;
-    height: 100%;
     bottom: 0;
     left: 0;
     filter: blur(2px);
