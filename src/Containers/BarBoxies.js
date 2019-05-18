@@ -52,7 +52,7 @@ const BarBoxies = props => {
         </div>
         {props.viewedItem === "blog" && <PostContainer />}
         {props.viewedItem !== "blog" && (
-          <div style={{ "font-size": "50px" }}>
+          <div style={{ fontSize: "50px" }}>
             {props.viewedItem.toUpperCase()}
           </div>
         )}

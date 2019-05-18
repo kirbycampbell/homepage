@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel|Cousine|Homemade+Apple|Marck+Script|Maven+Pro|Poiret+One|Unica+One");
 
 /* DESKTOP SCREENS */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 899px) {
   .column-container-move {
     display: flex;
     flex-direction: row;
@@ -54,13 +54,13 @@
     align-items: center;
   }
 
-  .ole-container {
+  /* .ole-container {
     margin: auto;
     height: 100%;
     display: block;
     width: 100%;
     transition: all 2s ease;
-  }
+  } */
 
   .x-button {
     display: block;
