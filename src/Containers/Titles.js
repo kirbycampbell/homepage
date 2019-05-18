@@ -57,8 +57,6 @@ const Titles = props => {
             Kirby Campbell. - - - - - - FullStack Web Developer.
           </div>
         </div>
-        {/* </CSSTransition> */}
-        {/* <div className="main-container-start " /> */}
       </React.Fragment>
     </div>
   );

@@ -3,21 +3,6 @@
 
 /* DESKTOP SCREENS */
 @media only screen and (min-width: 900px) {
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  /* ::::::::::::::::::::: MAIN MIDDLE SECTION :::::::::::::::::::::: */
-  /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-  /* :::::::::::::::::: Initial MIDDLE SECTION :::::::::::::::::::: */
-  .main-container-start {
-    max-width: 1400px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 2.5vh;
-    min-height: 400px;
-  }
   /* :::::::::::::::::: Final MIDDLE SECTION ::::::::::::::::::: */
   .main-container {
     max-width: 1400px;
@@ -27,14 +12,44 @@
     display: flex;
     flex-direction: column;
     height: 58vh;
-    min-height: 400px;
+    /* min-height: 400px; */
     opacity: 1;
     transition: all 2s ease;
   }
+  .main-box-start {
+    opacity: 0;
+    transition: opacity 1.3s ease;
+  }
+  .main-box-end {
+    opacity: 1;
+    transition: opacity 1.3s, transform 1.2s ease;
+  }
+  .main-box-hide {
+    opacity: 0;
+    height: 0px;
+    transition: opacity 1.7s, height 1.3s ease;
+    z-index: -100;
+  }
 
-  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  .bar-box-start {
+    opacity: 0;
+    height: 0px;
+    display: none;
+    transition: opacity 1.7s, height 1.3s ease;
+  }
 
+  .bar-box-move {
+    opacity: 0;
+    height: 0px;
+    display: hidden;
+    transition: opacity 1.7s, height 1.3s ease;
+  }
+  .bar-box-end {
+    opacity: 1;
+    transition: opacity 1.7s, height 1.3s ease;
+    height: 58vh;
+    display: flex;
+  }
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   /* :::::::::::::::::: CENTER BOX OF MIDDLE SECTION ::::::::::::::::::: */
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -58,7 +73,6 @@
     display: flex;
     flex-direction: column;
     height: 58vh;
-
     transition: all 2s ease;
   }
 
