@@ -14,20 +14,20 @@
     height: 58vh;
     /* min-height: 400px; */
     opacity: 1;
-    transition: all 2s ease;
+    transition: all 2s ease-in-out;
   }
   .main-box-start {
     opacity: 0;
-    transition: opacity 1.3s ease;
+    transition: opacity 1.3s ease-in-out;
   }
   .main-box-end {
     opacity: 1;
-    transition: opacity 1.3s, transform 1.2s ease;
+    transition: opacity 1.3s, transform 1.2s ease-in-out;
   }
   .main-box-hide {
     opacity: 0;
     height: 0px;
-    transition: opacity 1.7s, height 1.3s ease;
+    transition: opacity 1.2s, height 1.2s ease-in-out;
     z-index: -100;
   }
 
@@ -35,18 +35,18 @@
     opacity: 0;
     height: 0px;
     display: none;
-    transition: opacity 1.7s, height 1.3s ease;
+    transition: opacity 0.9s, height 1.2s ease-in-out;
   }
 
   .bar-box-move {
     opacity: 0;
     height: 0px;
     display: hidden;
-    transition: opacity 1.7s, height 1.3s ease;
+    transition: opacity 1.2s, height 1.2s ease-in-out;
   }
   .bar-box-end {
     opacity: 1;
-    transition: opacity 1.7s, height 1.3s ease;
+    transition: opacity 1.2s, height 1.2s ease-in-out;
     height: 58vh;
     display: flex;
   }
