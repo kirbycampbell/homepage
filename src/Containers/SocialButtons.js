@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../CSS/SocialButtons.css";
 import "../CSS/PhoneView.css";
 import useInterval from "../Functions/useInterval";
+import { CSSTransition } from "react-transition-group";
 
 const SocialButtons = props => {
   const [fadeIn, setFadeIn] = useState(false);
