@@ -22,7 +22,6 @@ class Project {
     return this.info;
   }
 }
-
 let resumeApp = new Project(
   "ResumeApp",
   "https://pure-waters-94797.herokuapp.com",
@@ -52,6 +51,13 @@ let blogCreator = new Project(
   "Abstract Javascript & React example. Meant to resemble Medium.com."
 );
 
-const projects = [resumeApp, ticHackToe, drinkManager, blogCreator];
+const projects = [
+  resumeApp,
+  ticHackToe,
+  drinkManager,
+  blogCreator,
+  drinkManager,
+  blogCreator
+];
 
 export { projects };

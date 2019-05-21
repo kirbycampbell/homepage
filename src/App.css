@@ -8,8 +8,7 @@
   }
   .App {
     text-align: center;
-    min-height: 750px;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     -webkit-backface-visibility: hidden;

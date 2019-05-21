@@ -1,2 +1,16 @@
 .portfolio-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 96%;
+  margin: auto;
+}
+
+.project-cont {
+  width: 44%;
+  margin: 1%;
+  border-radius: 7px;
+  background: rgba(31, 31, 185, 0.267);
 }
