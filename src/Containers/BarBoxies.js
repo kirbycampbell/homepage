@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/BarBoxies.css";
 import "../CSS/PhoneView.css";
 import PostContainer from "../blog-site/containers/PostContainer";
+import Portfolio from "./Portfolio";
 
 const BarBoxies = props => {
   return (
@@ -25,7 +26,7 @@ const BarBoxies = props => {
           }
           onClick={() => props.handleBarClick("portfolio")}
         >
-          <p>Portfolio</p>{" "}
+          <p>Portfolio</p>
         </div>
 
         <div
@@ -51,11 +52,14 @@ const BarBoxies = props => {
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
         {props.viewedItem === "blog" && <PostContainer />}
-        {props.viewedItem !== "blog" && (
+        {/* {props.viewedItem !== "blog" && (
           <div style={{ fontSize: "50px" }}>
             {props.viewedItem.toUpperCase()}
           </div>
-        )}
+        )} */}
+        {props.viewedItem === "portfolio" && <Portfolio />}
+        {props.viewedItem === "resume" && "resume"}
+        {props.viewedItem === "bio" && "bio"}
       </div>
     </React.Fragment>
   );
