@@ -3,6 +3,8 @@ import "../CSS/BarBoxies.css";
 import "../CSS/PhoneView.css";
 import PostContainer from "../blog-site/containers/PostContainer";
 import Portfolio from "./Portfolio";
+import Biography from "./Biography";
+import Resume from "./Resume";
 
 const BarBoxies = props => {
   return (
@@ -58,8 +60,8 @@ const BarBoxies = props => {
           </div>
         )} */}
         {props.viewedItem === "portfolio" && <Portfolio />}
-        {props.viewedItem === "resume" && "resume"}
-        {props.viewedItem === "bio" && "bio"}
+        {props.viewedItem === "resume" && <Resume />}
+        {props.viewedItem === "bio" && <Biography />}
       </div>
     </React.Fragment>
   );
