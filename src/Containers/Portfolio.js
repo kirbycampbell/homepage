@@ -7,21 +7,33 @@ const Portfolio = () => {
     <div className="portfolio-cont">
       {projects.map(project => {
         return (
-          <a
-            href={project.website}
-            key={project.website}
-            className="project-cont"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h1>{project.name}</h1>
+          <div key={project.website} className="project-cont">
+            <div className="port-title">{project.name}</div>
             <div className="mid-card">
               <div className="in-cardL"> {project.framework}</div>
               <div className="in-cardR"> {project.backend}</div>
             </div>
 
-            <h4>{project.info}</h4>
-          </a>
+            <div className="info">{project.info}</div>
+            <div className="mid-card">
+              <a
+                href={project.github}
+                className="card-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code
+              </a>
+              <a
+                href={project.website}
+                className="card-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
+            </div>
+          </div>
         );
       })}
     </div>
