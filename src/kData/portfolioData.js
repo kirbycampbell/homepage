@@ -56,6 +56,10 @@ const projects = [
   ticHackToe,
   drinkManager,
   blogCreator,
+  resumeApp,
+  ticHackToe,
+  drinkManager,
+  blogCreator,
   drinkManager,
   blogCreator
 ];

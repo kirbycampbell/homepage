@@ -3,14 +3,44 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100%;
+  height: 50vh;
   width: 96%;
   margin: auto;
 }
 
 .project-cont {
   width: 44%;
-  margin: 1%;
+  height: 80px;
+  overflow: hidden;
+  margin: 0.5%;
   border-radius: 7px;
   background: rgba(31, 31, 185, 0.267);
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.562);
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  width: 100%;
+  background: rgba(100, 255, 234, 0.274);
+}
+
+.mid-card {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.in-cardL {
+  font-size: 14px;
+  width: 40%;
+}
+.in-cardR {
+  font-size: 14px;
+  margin: 0;
+  width: 40%;
+}
+h4 {
+  font-size: 12px;
 }
