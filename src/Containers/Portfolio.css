@@ -17,9 +17,9 @@
   justify-content: center;
   align-items: center;
   width: 44%;
-  height: 200px;
+  height: 210px;
   overflow: hidden;
-  margin: 0.5%;
+  margin: 0% 2% 2% 2%;
   border-radius: 7px;
   border-top-right-radius: 1px;
   background: rgba(39, 36, 187, 0.227);
@@ -36,29 +36,33 @@
 
 .portfolio-piccont {
   top: 0;
-  height: 80px;
+  height: 110px;
   position: absolute;
   font-size: 18px;
   margin: 0;
   width: 100%;
   object-fit: cover;
+  margin-top: -30px;
+}
+
+.under-img {
+  top: 80px;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
 }
 
 .port-title {
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
-  position: absolute;
+
   font-size: 18px;
   margin: 0;
   width: 100%;
-  background: rgba(0, 110, 255, 0.637);
-}
-
-.under-img {
-  top: 30%;
-
-  color: white;
-  font-weight: bold;
+  background: rgba(9, 33, 65, 0.733);
 }
 
 .mid-card {
@@ -85,6 +89,7 @@
   font-size: 12px;
   color: rgba(34, 32, 32, 0.685);
   margin: 5px 0px 5px 0px;
+  line-height: 12px;
 }
 
 .card-links {

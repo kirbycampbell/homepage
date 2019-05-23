@@ -10,7 +10,7 @@ const Portfolio = () => {
           <div key={project.website} className="project-cont">
             <img
               className="portfolio-piccont"
-              src="https://i.imgur.com/lxfHGh9.jpg"
+              src={project.image}
               alt={project.website}
             />
             <div className="under-img">
