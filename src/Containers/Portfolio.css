@@ -11,11 +11,17 @@
 }
 
 .project-cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 44%;
-  height: 120px;
+  height: 200px;
   overflow: hidden;
   margin: 0.5%;
   border-radius: 7px;
+  border-top-right-radius: 1px;
   background: rgba(39, 36, 187, 0.227);
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.562);
   transition: transform 0.3s, box-shadow 0.3s ease;
@@ -28,18 +34,35 @@
   background: rgba(31, 31, 185, 0.307);
 }
 
-.port-title {
+.portfolio-piccont {
+  top: 0;
+  height: 80px;
+  position: absolute;
   font-size: 18px;
   margin: 0;
   width: 100%;
-  background: rgba(100, 255, 234, 0.274);
-  color: rgba(75, 77, 180, 0.829);
+  object-fit: cover;
+}
+
+.port-title {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  position: absolute;
+  font-size: 18px;
+  margin: 0;
+  width: 100%;
+  background: rgba(0, 110, 255, 0.637);
+}
+
+.under-img {
+  top: 30%;
+
+  color: white;
   font-weight: bold;
 }
 
 .mid-card {
   width: 100%;
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -61,11 +84,19 @@
   font-weight: normal;
   font-size: 12px;
   color: rgba(34, 32, 32, 0.685);
+  margin: 5px 0px 5px 0px;
 }
 
 .card-links {
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: rgba(248, 220, 96, 0.397);
+  height: 40px;
   width: 38%;
   margin: 0px 18px;
   box-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.462);
