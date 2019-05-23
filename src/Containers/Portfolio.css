@@ -1,16 +1,18 @@
 .portfolio-cont {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 50vh;
+
   width: 96%;
   margin: auto;
+  overflow: hidden;
 }
 
 .project-cont {
   width: 44%;
-  height: 100px;
+  height: 120px;
   overflow: hidden;
   margin: 0.5%;
   border-radius: 7px;

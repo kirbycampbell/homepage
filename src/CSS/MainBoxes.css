@@ -47,7 +47,7 @@
   .bar-box-end {
     opacity: 1;
     transition: opacity 1.2s, height 1.2s ease-in-out;
-    height: 58vh;
+    height: 100%;
     display: flex;
   }
   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

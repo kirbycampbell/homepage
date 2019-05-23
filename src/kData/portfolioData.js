@@ -66,10 +66,7 @@ const projects = [
   blogCreator,
   resumeApp,
   ticHackToe,
-  drinkManager,
-  blogCreator,
-  drinkManager,
-  blogCreator
+  drinkManager
 ];
 
 export { projects };

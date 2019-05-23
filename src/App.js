@@ -22,14 +22,16 @@ function App() {
 
   return (
     <div className="App">
-      <Titles
-        introMsg={introMsg}
-        secondMsg={secondMsg}
-        setNewTitle={setNewTitle}
-      />
-      <div className="body-space">
-        <SocialButtons introMsg={introMsg} />
-        <MainBoxes introMsg={introMsg} secondMsg={secondMsg} />
+      <div className="above-footer-cont">
+        <Titles
+          introMsg={introMsg}
+          secondMsg={secondMsg}
+          setNewTitle={setNewTitle}
+        />
+        <div className="body-space">
+          <SocialButtons introMsg={introMsg} />
+          <MainBoxes introMsg={introMsg} secondMsg={secondMsg} />
+        </div>
       </div>
       <Footer />
     </div>

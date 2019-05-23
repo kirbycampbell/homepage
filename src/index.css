@@ -1,10 +1,12 @@
 html {
   min-height: 100vh;
+  position: relative;
 }
 
 body {
   margin: 0;
   padding: 0;
+  position: relative;
   background: rgba(177, 133, 133, 0.107);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
