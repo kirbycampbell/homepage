@@ -1,0 +1,74 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.resume-app-cont {
+  overflow: hidden;
+  filter: sharpen(0px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+  width: 80%;
+  padding: 2%;
+  margin: 0% 1.5% 0% 2%;
+  border: 1px solid rgb(0, 0, 19);
+  border-radius: 5px;
+  box-shadow: -10px 10px 7px 3px rgba(0, 0, 0, 0.562);
+  transition: all 0.8s ease;
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/08/20/52/milky-way-1655504_1280.jpg");
+}
+
+.resume-app-cont:hover {
+  transition: all 0.8s ease;
+  transform: translate(-3px, 3px);
+  box-shadow: -5px 5px 3px 1.5px rgba(0, 0, 0, 0.562);
+}
+
+/* .resume-pdf-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 2% 0% 1.5%;
+  height: 100%;
+  width: 26%;
+  border: 1px solid rgb(0, 0, 19);
+  border-radius: 5px;
+  box-shadow: 10px 10px 7px 3px rgba(0, 0, 0, 0.562);
+  transition: all 0.8s ease;
+}
+
+.resume-pdf-cont:hover {
+  transition: all 0.8s ease;
+  transform: translate(3px, 3px);
+  box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, 0.562);
+} */
+
+.resume-pic {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.resume-pdf-link {
+  position: relative;
+  width: 33%;
+  padding: 1%;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.resume-app-link {
+  position: absolute;
+  width: 33%;
+  padding: 1%;
+  top: 0;
+  right: 0;
+  color: white;
+}
