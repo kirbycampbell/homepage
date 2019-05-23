@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .resume-app-cont {
@@ -14,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   height: 40%;
-  width: 80%;
+  width: 100%;
   padding: 2%;
   margin: 0% 1.5% 0% 2%;
   border: 1px solid rgb(0, 0, 19);
@@ -26,49 +27,61 @@
 
 .resume-app-cont:hover {
   transition: all 0.8s ease;
-  transform: translate(-3px, 3px);
+  /* transform: translate(-3px, 3px); */
   box-shadow: -5px 5px 3px 1.5px rgba(0, 0, 0, 0.562);
 }
 
-/* .resume-pdf-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0% 2% 0% 1.5%;
-  height: 100%;
-  width: 26%;
-  border: 1px solid rgb(0, 0, 19);
-  border-radius: 5px;
-  box-shadow: 10px 10px 7px 3px rgba(0, 0, 0, 0.562);
-  transition: all 0.8s ease;
-}
-
-.resume-pdf-cont:hover {
-  transition: all 0.8s ease;
-  transform: translate(3px, 3px);
-  box-shadow: 5px 5px 3px 1.5px rgba(0, 0, 0, 0.562);
-} */
-
 .resume-pic {
   border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   position: relative;
-  width: 100%;
+  width: 90%;
+}
+
+.resume-link-sec {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.btnres {
+  width: 25%;
+  padding: 1%;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgb(56, 63, 130);
+  background: linear-gradient(
+    0deg,
+    rgba(56, 63, 130, 1) 0%,
+    rgba(54, 9, 121, 0.7982901778875613) 38%,
+    rgba(0, 21, 255, 0.8010912983357406) 100%
+  );
+}
+
+.btnres:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(49, 59, 148, 0.644) 0%,
+    rgba(70, 17, 150, 0.562) 38%,
+    rgba(13, 30, 223, 0.623) 100%
+  );
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+.btnres:active {
+  transform: translate(-3px, 3px);
+
+  user-select: none;
 }
 
 .resume-pdf-link {
-  position: relative;
-  width: 33%;
-  padding: 1%;
-  top: 0;
-  left: 0;
-  color: white;
+  margin-right: 25%;
 }
 
 .resume-app-link {
-  position: absolute;
-  width: 33%;
-  padding: 1%;
-  top: 0;
-  right: 0;
-  color: white;
+  margin-left: 25%;
 }

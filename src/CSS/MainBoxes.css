@@ -91,4 +91,18 @@
     padding: 10px 0 0 0;
     transition: all 1s ease;
   }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: auto; /* or absolute */
+    z-index: 1000;
+    color: blue;
+    width: 40%;
+    height: 80px;
+    top: 50%;
+    left: 30%;
+  }
 }

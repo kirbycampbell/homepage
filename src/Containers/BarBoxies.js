@@ -53,12 +53,9 @@ const BarBoxies = props => {
         <div>
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
+
         {props.viewedItem === "blog" && <PostContainer />}
-        {/* {props.viewedItem !== "blog" && (
-          <div style={{ fontSize: "50px" }}>
-            {props.viewedItem.toUpperCase()}
-          </div>
-        )} */}
+
         {props.viewedItem === "portfolio" && <Portfolio />}
         {props.viewedItem === "resume" && <Resume />}
         {props.viewedItem === "bio" && <Biography />}

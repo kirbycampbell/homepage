@@ -4,6 +4,7 @@ import "../CSS/PhoneView.css";
 import InnerBoxies from "./InnerBoxies";
 import BarBoxies from "./BarBoxies";
 import useInterval from "../Functions/useInterval";
+import Roller from "./Roller";
 
 const MainBoxes = props => {
   const [count, setCount] = useState(0);
@@ -67,11 +68,17 @@ const MainBoxes = props => {
         <InnerBoxies handleClick={handleClick} />
       </div>
       {/* :::::::::::::::::::::::: BAR of BUTTONS :::::::::::::::::::::::::: */}
+      {timer2 && (
+        <div className="centered">
+          <Roller />
+        </div>
+      )}
       <div className={"main-container " + barBoxClass}>
         <BarBoxies
           handleBarClick={handleBarClick}
           viewedItem={viewedItem}
           Xout={Xout}
+          timer={timer}
         />
       </div>
     </div>
