@@ -95,14 +95,15 @@
   .boxerson {
     overflow: hidden;
     float: left;
-    height: 47%;
+    height: 160px;
     width: 50%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
   }
 
   .card {
-    height: 80%;
+    height: 100%;
 
     user-select: none;
     cursor: pointer;
@@ -120,7 +121,8 @@
     filter: brightness(78%);
   }
   .h1-card {
-    font-size: calc(12px + 1vmin);
+    font-size: 23px;
+    font-weight: bold;
     margin: auto;
     padding: 0;
     position: relative;
@@ -136,8 +138,12 @@
     user-select: none;
   }
   .p-card {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin: auto;
     z-index: 2;
+    text-align: center;
     color: rgb(245, 216, 216);
   }
 }

@@ -68,8 +68,6 @@ class PostContainer extends Component {
   render() {
     return (
       <div className="container">
-        <h2>Kirby's Code Blog</h2>
-
         <div className="outer-card">
           {this.state.posts.map(post => {
             let time = new Date(
