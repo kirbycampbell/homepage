@@ -107,21 +107,21 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 40%;
+    height: 60%;
     width: 100%;
-    padding: 2%;
+    padding: 0%;
     margin: 0% 1.5% 0% 2%;
-    border: 1px solid rgb(0, 0, 19);
+    /* border: 1px solid rgb(0, 0, 19); */
     border-radius: 5px;
-    box-shadow: -10px 10px 7px 3px rgba(0, 0, 0, 0.562);
+    /* box-shadow: -10px 10px 7px 3px rgba(0, 0, 0, 0.562); */
     transition: all 0.8s ease;
-    background-image: url("https://cdn.pixabay.com/photo/2016/09/08/20/52/milky-way-1655504_1280.jpg");
+    /* background-image: url("https://cdn.pixabay.com/photo/2016/09/08/20/52/milky-way-1655504_1280.jpg"); */
   }
 
   .resume-app-cont:hover {
     transition: all 0.8s ease;
     /* transform: translate(-3px, 3px); */
-    box-shadow: -5px 5px 3px 1.5px rgba(0, 0, 0, 0.562);
+    /* box-shadow: -5px 5px 3px 1.5px rgba(0, 0, 0, 0.562); */
   }
 
   .resume-pic {
@@ -129,22 +129,24 @@
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     position: relative;
-    width: 90%;
+    width: 100%;
   }
 
   .resume-link-sec {
     display: flex;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
   .btnres {
-    width: 25%;
+    width: 40%;
     padding: 1%;
     color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
     background: rgb(56, 63, 130);
     background: linear-gradient(
       0deg,
@@ -172,10 +174,12 @@
   }
 
   .resume-pdf-link {
-    margin-right: 25%;
+    margin-right: 8%;
+    margin-left: 2%;
   }
 
   .resume-app-link {
-    margin-left: 25%;
+    margin-left: 8%;
+    margin-right: 2%;
   }
 }

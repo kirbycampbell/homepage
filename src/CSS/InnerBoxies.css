@@ -118,7 +118,7 @@
     cursor: pointer;
     user-select: none;
     border-radius: 6px;
-    box-shadow: 3px 3px 35px 2px rgba(247, 15, 15, 0.253);
+    box-shadow: 3px 3px 5px 2px rgba(90, 5, 5, 0.253);
     transition: all 1.3s ease;
     overflow: hidden;
     border-radius: 10px;
@@ -128,10 +128,10 @@
     transition: all 0.7s ease;
     background: rgba(6, 12, 70, 0.455);
     text-shadow: 0px 0px 6px;
-    box-shadow: 0.5px 0.23px 50px 6px rgba(0, 81, 255, 0.411);
+    box-shadow: 0.5px 0.23px 6px 6px rgba(0, 81, 255, 0.411);
   }
   .section:active {
-    box-shadow: 6px 8px 20px 10px rgba(228, 181, 29, 0.486);
+    box-shadow: 6px 8px 4px 10px rgba(228, 181, 29, 0.486);
   }
   /* :::::::::::::::: Background Inner Boxes ::::::::::::::::::::: */
   .image-box {
