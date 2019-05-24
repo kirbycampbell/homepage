@@ -12,73 +12,79 @@
 }
 
 /* For Phones & Pads */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .container {
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    justify-content: center;
+    height: 20%;
+    margin-bottom: 20px;
   }
   .outer-card {
     align-items: center;
     justify-content: center;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: 7em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
-    z-index: 50;
-    margin-bottom: 120px;
+    margin: auto;
+  }
+
+  .boxerson {
+    overflow: hidden;
+    float: left;
+    height: 140px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
   }
 
   .card {
-    height: 80%;
-    width: 98%;
-    border: rgba(59, 59, 75, 0.205) solid 2px;
-    border-radius: 2px;
+    height: 100%;
+
     user-select: none;
     cursor: pointer;
-    margin: auto;
-    padding: 0;
-    z-index: 10;
-    overflow: hidden;
+
+    z-index: 15;
   }
+
   .container-image {
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 98%;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    display: grid;
     position: absolute;
     z-index: 0;
-    overflow: hidden;
-    margin-top: -30%;
+    opacity: 0.93;
+    filter: brightness(78%);
   }
   .h1-card {
-    font-size: calc(16px + 1vmin);
-
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0;
+    position: relative;
     z-index: 2;
     color: white;
   }
 
   h2 {
-    font-size: calc(17px + 1vmin);
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    font-size: calc(10px + 1vmin);
+
     margin: auto;
-    margin-bottom: 2%;
     z-index: 5;
     user-select: none;
   }
   .p-card {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: auto;
     z-index: 2;
-    color: white;
+    text-align: center;
+    color: rgb(245, 216, 216);
   }
 }
 
 /* For Desktops */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .container {
     height: 20%;
     margin-bottom: 20px;
