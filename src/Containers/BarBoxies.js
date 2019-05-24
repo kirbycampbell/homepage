@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/BarBoxies.css";
 import "../CSS/PhoneView.css";
-import PostContainer from "../blog-site/containers/PostContainer";
+import PostContainer from "../Components/Blog/PostContainer";
 import Portfolio from "./Portfolio";
 import Biography from "./Biography";
 import Resume from "./Resume";
