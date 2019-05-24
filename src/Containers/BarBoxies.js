@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/BarBoxies.css";
-import "../CSS/PhoneView.css";
+//import "../CSS/PhoneView.css";
 import PostContainer from "../Components/Blog/PostContainer";
 import Portfolio from "./Portfolio";
 import Biography from "./Biography";

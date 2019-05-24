@@ -59,3 +59,62 @@
     opacity: 1;
   } */
 }
+
+/* PHONE SCREENS */
+@media only screen and (max-width: 900px) {
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  /* :::::::::::::::::::::::::: FOOTER SECTION :::::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  .footer-img {
+    position: absolute;
+    filter: brightness(70%);
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background: center center;
+    opacity: 0.9;
+    z-index: -1;
+    filter: hue-rotate(10deg) contrast(240%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+
+    background: rgba(7, 27, 31, 0.76);
+    z-index: 100;
+    color: white;
+    font-size: 26px;
+    font-family: "Cousine", monospace;
+    margin: auto;
+  }
+
+  .foot-text {
+    margin: 10px;
+  }
+  .subscript {
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .copyrighter {
+    margin: 0 10px;
+  }
+  /* .linker {
+    text-decoration: none;
+    margin: 0px 5%;
+  }
+  .twit {
+    height: 20%;
+    color: blue;
+    z-index: 2;
+    opacity: 1;
+  } */
+}

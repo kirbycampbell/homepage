@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/SocialButtons.css";
-import "../CSS/PhoneView.css";
+//import "../CSS/PhoneView.css";
 import useInterval from "../Functions/useInterval";
 
 const SocialButtons = props => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/InnerBoxies.css";
-import "../CSS/PhoneView.css";
+//import "../CSS/PhoneView.css";
 
 const InnerBoxies = props => {
   return (

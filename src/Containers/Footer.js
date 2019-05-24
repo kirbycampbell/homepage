@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/Footer.css";
-import "../CSS/PhoneView.css";
+//import "../CSS/PhoneView.css";
 var emoji = require("node-emoji");
 
 const Footer = () => {

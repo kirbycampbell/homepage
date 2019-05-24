@@ -45,3 +45,34 @@
     font-family: "Cousine", monospace;
   } */
 }
+
+@media only screen and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+  }
+  .App {
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  .above-footer-cont {
+    min-height: 100;
+    padding-bottom: 3vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .body-space {
+    position: relative;
+    width: 100%;
+    min-height: 68vh;
+  }
+}

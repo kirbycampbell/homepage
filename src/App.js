@@ -5,7 +5,7 @@ import SocialButtons from "./Containers/SocialButtons";
 import Titles from "./Containers/Titles";
 import Footer from "./Containers/Footer";
 import "./App.css";
-import "./CSS/PhoneView.css";
+//import "./CSS/PhoneView.css";
 
 function App() {
   const [introMsg, setIntroMsg] = useState(true);

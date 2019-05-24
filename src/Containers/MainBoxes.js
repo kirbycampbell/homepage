@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/MainBoxes.css";
-import "../CSS/PhoneView.css";
+//import "../CSS/PhoneView.css";
 import InnerBoxies from "./InnerBoxies";
 import BarBoxies from "./BarBoxies";
 import useInterval from "../Functions/useInterval";
