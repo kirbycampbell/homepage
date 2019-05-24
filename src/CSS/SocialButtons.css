@@ -71,7 +71,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
+    min-height: 80px;
     width: 80%;
     background-image: linear-gradient(
       to bottom,
@@ -81,7 +82,6 @@
     );
     transition: all 2s ease;
     margin: auto;
-    margin-bottom: 20px;
   }
 
   .social-start {
