@@ -1,6 +1,5 @@
 import React from "react";
 import "./Resume.css";
-// import IntResume from "../Components/Resume/Resume-Container/IntResume";
 
 const Resume = () => {
   return (
@@ -16,7 +15,6 @@ const Resume = () => {
             alt="resume"
             className="resume-pic"
           />
-          {/* <IntResume /> */}
         </div>
       </div>
     </div>
