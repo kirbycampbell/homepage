@@ -94,7 +94,7 @@ let journalApp = new Project(
   "AWS Amplify",
   "News page clone from scratch (CFR Clone).",
   "https://github.com/kirbycampbell/journalapp/tree/master/src",
-  "https://i.imgur.com/AGv9362.jpg"
+  "https://i.imgur.com/IPZYU3e.jpg"
 );
 
 const projects = [
