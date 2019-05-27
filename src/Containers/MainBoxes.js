@@ -5,6 +5,7 @@ import InnerBoxies from "./InnerBoxies";
 import BarBoxies from "./BarBoxies";
 import useInterval from "../Functions/useInterval";
 import Roller from "./Roller";
+import { Route, Switch } from "react-router-dom";
 
 const MainBoxes = props => {
   const [count, setCount] = useState(0);
@@ -65,7 +66,10 @@ const MainBoxes = props => {
     <div>
       {/* :::::::::::::::::: UNCLICKED MAIN BOX SECTION :::::::::::::::::::: */}
       <div className={"main-container " + mainBoxClass}>
-        <InnerBoxies handleClick={handleClick} />
+        <Route
+          path="/"
+          render={props => <InnerBoxies handleClick={handleClick} />}
+        />
       </div>
       {/* :::::::::::::::::::::::: BAR of BUTTONS :::::::::::::::::::::::::: */}
       {timer2 && (

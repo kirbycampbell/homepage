@@ -1,4 +1,5 @@
 import React from "react";
+import { Redirect, Link, Route, Switch } from "react-router-dom";
 import "../CSS/BarBoxies.css";
 //import "../CSS/PhoneView.css";
 import PostContainer from "../Components/Blog/PostContainer";
@@ -53,12 +54,19 @@ const BarBoxies = props => {
         <div className="x-div">
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
-
+        {/* 
         {props.viewedItem === "blog" && <PostContainer />}
+
 
         {props.viewedItem === "portfolio" && <Portfolio />}
         {props.viewedItem === "resume" && <Resume />}
-        {props.viewedItem === "bio" && <Biography />}
+        {props.viewedItem === "bio" && <Biography />} */}
+        <Switch>
+          <Route exact path="/blog" component={PostContainer} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/bio" component={Biography} />
+        </Switch>
       </div>
     </React.Fragment>
   );
