@@ -50,7 +50,7 @@ const BarBoxies = props => {
         </div>
       </div>
       <div className="ole-container">
-        <div>
+        <div className="x-div">
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
 

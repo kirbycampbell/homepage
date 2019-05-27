@@ -1,0 +1,50 @@
+.experience-outerD {
+  margin-bottom: 20px;
+}
+
+.outer-exp {
+  margin: auto;
+  font-weight: bold;
+}
+
+.inner-exp {
+  display: flex;
+  float: left;
+  width: 28%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-right-exp {
+  display: grid;
+  float: right;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.smaller-text {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.exp-item {
+  border: 2px solid rgba(128, 128, 128, 0.226);
+
+  border-radius: 8px;
+  display: flex;
+
+  margin: auto;
+  margin-bottom: 3px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.exp-item:hover {
+  background: rgba(116, 74, 196, 0.108);
+}

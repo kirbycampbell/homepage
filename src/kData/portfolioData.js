@@ -97,6 +97,16 @@ let journalApp = new Project(
   "https://i.imgur.com/IPZYU3e.jpg"
 );
 
+let meditationApp = new Project(
+  "Meditation Timer App",
+  "http://meditation-app-meditation.s3-website-us-west-2.amazonaws.com/",
+  "React Hooks & Javascript",
+  "AWS Amplify",
+  "Meditation Timer App with sounds & profiles.",
+  "https://github.com/kirbycampbell/meditation-timer-hooks/tree/master/src",
+  "https://i.imgur.com/OrbbDks.jpg"
+);
+
 const projects = [
   resumeApp,
   ticHackToe,
@@ -105,7 +115,7 @@ const projects = [
   vintageStore,
   chatApp,
   journalApp,
-  resumeApp
+  meditationApp
 ];
 
 export { projects };

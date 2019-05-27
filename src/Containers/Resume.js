@@ -1,10 +1,11 @@
 import React from "react";
 import "./Resume.css";
+import DesktopView from "../Components/DesktopView/DesktopView";
 
 const Resume = () => {
   return (
     <div>
-      <div className="resume-container">
+      {/* <div className="resume-container">
         <div className="resume-app-cont">
           <div className="resume-link-sec">
             <div className="btnres resume-pdf-link">Print</div>
@@ -16,7 +17,8 @@ const Resume = () => {
             className="resume-pic"
           />
         </div>
-      </div>
+      </div> */}
+      <DesktopView />
     </div>
   );
 };
