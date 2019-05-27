@@ -65,10 +65,11 @@ class PostContainer extends Component {
     });
   };
 
+  // link format https://siq-blog.herokuapp.com/Post/YWXjkJwBiwAQNPxiPPD9
   render() {
     return (
-      <div className="container">
-        <div className="outer-card">
+      <div className="container-blog">
+        <div className="outer-card-blog">
           {this.state.posts.map(post => {
             let time = new Date(
               post._document.proto.createTime
@@ -83,7 +84,11 @@ class PostContainer extends Component {
             });
 
             return (
-              <div key={post.id} className="boxerson">
+              <a
+                href={"https://siq-blog.herokuapp.com/Post/" + post.id}
+                key={post.id}
+                className="boxerson"
+              >
                 <div
                   id={post.id}
                   onClick={this.loadSinglePost}
@@ -117,7 +122,7 @@ class PostContainer extends Component {
                     {time}
                   </p>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

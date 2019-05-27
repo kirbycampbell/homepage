@@ -57,7 +57,7 @@
   .ole-container {
     margin: auto;
     min-height: 100%;
-    position: relative;
+    /* position: relative; */
     /* display: flex; */
     width: 100%;
     transition: all 2s ease;
@@ -153,7 +153,8 @@
 
   .x-div {
     display: flex;
-    width: 80%;
+    width: 99%;
+    margin-bottom: 1.5%;
   }
   i {
     margin: 0;
