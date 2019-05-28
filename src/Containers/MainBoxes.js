@@ -5,7 +5,7 @@ import InnerBoxies from "./InnerBoxies";
 import BarBoxies from "./BarBoxies";
 import useInterval from "../Functions/useInterval";
 import Roller from "./Roller";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 const MainBoxes = props => {
@@ -16,7 +16,6 @@ const MainBoxes = props => {
   const [mainBoxClass, setMainBoxClass] = useState("main-box-start");
   const [barBoxClass, setBarBoxClass] = useState("bar-box-start");
   const [viewedItem, setViewedItem] = useState("");
-  const [pathName, setPathName] = useState("");
   const history = createBrowserHistory();
 
   // Intializing Sequence
@@ -50,9 +49,9 @@ const MainBoxes = props => {
     }
   }, [count2]);
 
-  useEffect(() => {
-    history.push("/" + viewedItem);
-  }, [viewedItem]);
+  // useEffect(() => {
+  //   history.push("/" + viewedItem);
+  // }, [viewedItem]);
 
   // HISTORY LISTEN
   history.listen((location, action) => {
@@ -99,7 +98,6 @@ const MainBoxes = props => {
         <BarBoxies
           handleBarClick={handleBarClick}
           viewedItem={viewedItem}
-          pathName={pathName}
           Xout={Xout}
           timer={timer}
           history={history}
