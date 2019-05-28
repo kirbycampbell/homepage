@@ -37,7 +37,7 @@ const InnerBoxies = props => {
           </div>
         </Link>
       </div>
-      <div className="column-container    ">
+      <div className="column-container">
         <Link
           to="/blog"
           className="section"

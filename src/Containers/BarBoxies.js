@@ -37,7 +37,6 @@ const BarBoxies = props => {
         >
           <p>Portfolio</p>
         </Link>
-
         <Link
           to="/blog"
           className={
@@ -62,11 +61,6 @@ const BarBoxies = props => {
         <div className="x-div">
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
-        {/* {props.viewedItem === "blog" && <PostContainer />}
-
-        {props.viewedItem === "portfolio" && <Portfolio />}
-        {props.viewedItem === "resume" && <Resume />}
-        {props.viewedItem === "bio" && <Biography />} */}
         <Route path="/blog" component={PostContainer} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume" component={Resume} />

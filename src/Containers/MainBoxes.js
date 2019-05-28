@@ -6,7 +6,7 @@ import BarBoxies from "./BarBoxies";
 import useInterval from "../Functions/useInterval";
 import Roller from "./Roller";
 import { Route } from "react-router-dom";
-import { createBrowserHistory } from "history";
+//import { createBrowserHistory } from "history";
 
 const MainBoxes = props => {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ const MainBoxes = props => {
   const [mainBoxClass, setMainBoxClass] = useState("main-box-start");
   const [barBoxClass, setBarBoxClass] = useState("bar-box-start");
   const [viewedItem, setViewedItem] = useState("");
-  const history = createBrowserHistory();
+  //const history = createBrowserHistory();
 
   // Intializing Sequence
   useEffect(() => {
@@ -54,16 +54,16 @@ const MainBoxes = props => {
   // }, [viewedItem]);
 
   // HISTORY LISTEN
-  history.listen((location, action) => {
-    // if (pathName !== location.pathname) {
-    //   console.log(`The current URL is ${location.pathname}${location.search}`);
-    //   setPathName(location.pathname);
-    // }
-    if (action === "POP") {
-      console.log("action is pop bruh");
-    }
-    console.log(`The current URL is ${location.pathname}${location.search}`);
-  });
+  // history.listen((location, action) => {
+  //   // if (pathName !== location.pathname) {
+  //   //   console.log(`The current URL is ${location.pathname}${location.search}`);
+  //   //   setPathName(location.pathname);
+  //   // }
+  //   if (action === "POP") {
+  //     console.log("action is pop bruh");
+  //   }
+  //   console.log(`The current URL is ${location.pathname}${location.search}`);
+  // });
 
   const handleClick = item => {
     setViewedItem(item);
@@ -100,7 +100,6 @@ const MainBoxes = props => {
           viewedItem={viewedItem}
           Xout={Xout}
           timer={timer}
-          history={history}
         />
       </div>
     </div>
