@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Redirect, Link, Route, Switch } from "react-router-dom";
 import "../CSS/BarBoxies.css";
 //import "../CSS/PhoneView.css";
@@ -8,6 +8,19 @@ import Biography from "./Biography";
 import Resume from "./Resume";
 
 const BarBoxies = props => {
+  // const [chosenTopic, setChosenTopic] = useState(props.viewedItem);
+  // useEffect(() => {
+  //   setChosenTopic(props.viewedItem);
+  // }, [props.viewedItem]);
+
+  // useEffect(() => {
+  //   props.history.push("/" + props.viewedItem);
+  // }, [props]);
+
+  const insideBarClick = el => {
+    props.handleBarClick(el);
+    props.history.push("/" + el);
+  };
   return (
     <React.Fragment>
       <div className="column-container-move">
@@ -17,7 +30,7 @@ const BarBoxies = props => {
               ? "section-move active"
               : "section-move"
           }
-          onClick={() => props.handleBarClick("resume")}
+          onClick={() => insideBarClick("resume")}
         >
           <p>Resume</p>
         </div>
@@ -27,7 +40,7 @@ const BarBoxies = props => {
               ? "section-move active"
               : "section-move"
           }
-          onClick={() => props.handleBarClick("portfolio")}
+          onClick={() => insideBarClick("portfolio")}
         >
           <p>Portfolio</p>
         </div>
@@ -36,7 +49,7 @@ const BarBoxies = props => {
           className={
             props.viewedItem === "blog" ? "section-move active" : "section-move"
           }
-          onClick={() => props.handleBarClick("blog")}
+          onClick={() => insideBarClick("blog")}
         >
           <p>Blog</p>
         </div>
@@ -44,7 +57,7 @@ const BarBoxies = props => {
           className={
             props.viewedItem === "bio" ? "section-move active" : "section-move"
           }
-          onClick={() => props.handleBarClick("bio")}
+          onClick={() => insideBarClick("bio")}
         >
           {" "}
           <p>Bio</p>
@@ -54,19 +67,15 @@ const BarBoxies = props => {
         <div className="x-div">
           <i className="fas fa-times x-button" onClick={props.Xout} />
         </div>
-        {/* 
         {props.viewedItem === "blog" && <PostContainer />}
-
 
         {props.viewedItem === "portfolio" && <Portfolio />}
         {props.viewedItem === "resume" && <Resume />}
-        {props.viewedItem === "bio" && <Biography />} */}
-        <Switch>
-          <Route exact path="/blog" component={PostContainer} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/bio" component={Biography} />
-        </Switch>
+        {props.viewedItem === "bio" && <Biography />}
+        {/* <Route path="/blog" component={PostContainer} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/bio" component={Biography} /> */}
       </div>
     </React.Fragment>
   );
