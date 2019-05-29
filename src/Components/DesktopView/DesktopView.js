@@ -60,27 +60,6 @@ const DesktopView = () => {
               www.jkirbycampbell.com
             </a>
           </div>
-
-          <div className="spacer2" />
-          {/*~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~*/}
-          <div className="divider" />
-          <div className="titles">Projects</div>
-          <div className="divider" />
-          <ProjectContainerD />
-          <div className="spacer2" />
-          <div className="spacer2" />
-          {/*~~~~~~~~~~~ EDUCATION SECTION ~~~~~~~~~~~~*/}
-          <div className="divider" />
-          <div className="titles">Programs</div>
-          <div className="divider" />
-          <ProgramsD />
-          <div className="spacer" />
-
-          {/*~~~~~~~~~~~ PERSONALITY SECTION ~~~~~~~~~~~~*/}
-          <div className="divider" />
-          <div className="titles">Personality</div>
-          <div className="divider" />
-          <PersonalityD />
         </div>
         {/*~~~~~~::::::::::::::::::::~~~~~ RIGHT SIDE ~~~~~:::::::::::::::::::::::::~~~~~~~*/}
         <div className="right-block">
@@ -113,6 +92,25 @@ const DesktopView = () => {
             <Education />
           </div>
         </div>
+        <div className="spacer2" />
+        {/*~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~*/}
+        <div className="divider" />
+        <div className="titles">Projects</div>
+        <div className="divider" />
+        <ProjectContainerD />
+        <div className="spacer2" />
+        <div className="spacer2" />
+        {/*~~~~~~~~~~~ EDUCATION SECTION ~~~~~~~~~~~~*/}
+        <div className="divider" />
+        <div className="titles">Programs</div>
+        <div className="divider" />
+        <ProgramsD />
+        <div className="spacer" />
+        {/*~~~~~~~~~~~ PERSONALITY SECTION ~~~~~~~~~~~~*/}
+        <div className="divider" />
+        <div className="titles">Personality</div>
+        <div className="divider" />
+        <PersonalityD />
       </div>
     </div>
   );
