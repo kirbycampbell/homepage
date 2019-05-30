@@ -22,7 +22,6 @@ function App() {
   useInterval(() => {
     if (introMsg) {
       setIntroMsg(false);
-      console.log("HEYO FUCK");
     } else if (newTitle) {
       setSecondMsg(true);
       localStorage.setItem("visited", true);

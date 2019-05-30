@@ -40,3 +40,9 @@
 .personality-item:hover {
   background: rgba(116, 74, 196, 0.108);
 }
+
+@media screen and (max-width: 900px) {
+  .personality-item {
+    font-size: 12px;
+  }
+}

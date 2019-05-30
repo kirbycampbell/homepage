@@ -68,6 +68,7 @@ const DesktopView = () => {
 
             {/*~~~~~~::::::::::::::::::::~~~~~ RIGHT SIDE ~~~~~:::::::::::::::::::::::::~~~~~~~*/}
             <div className="right-block">
+              {/* <div className="spacer" /> */}
               <div className="spacer" />
 
               <div className="right-grid">

@@ -89,12 +89,18 @@
 /* For Desktops */
 @media only screen and (min-width: 900px) {
   .container-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40%;
     margin-bottom: 20px;
     width: 90%;
     margin: auto;
   }
   .outer-card-blog {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 

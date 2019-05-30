@@ -41,3 +41,12 @@
 .edu-item:hover {
   background: rgba(116, 74, 196, 0.108);
 }
+@media screen and (max-width: 900px) {
+  .outer-education {
+    font-size: 13px;
+  }
+
+  .edu-item {
+    font-size: 13px;
+  }
+}

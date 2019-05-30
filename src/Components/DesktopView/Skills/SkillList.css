@@ -23,3 +23,9 @@
   width: 100%;
   user-select: none;
 }
+
+@media screen and (max-width: 900px) {
+  .skillItem {
+    font-size: 12px;
+  }
+}

@@ -298,14 +298,11 @@
   }
 
   .right-block {
-    float: right;
-    right: 0;
     height: 80%;
   }
 
   .right-grid {
     float: right;
-    width: 95%;
-    margin-right: 12px;
+    width: 100%;
   }
 }
