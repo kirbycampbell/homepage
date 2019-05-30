@@ -196,7 +196,7 @@
   }
   .prof-pic {
     margin-bottom: 10px;
-    height: 136px;
+    height: 146px;
     border-radius: 100px;
   }
 
@@ -209,10 +209,11 @@
   .left-sidebar {
   }
   .contact {
-    grid-template-columns: 25% 70%;
+    grid-template-columns: 15% 70%;
     display: grid;
-    grid-gap: 2%;
-    height: 17.85%;
+    grid-gap: 1%;
+    height: 22%;
+    margin-bottom: 10px;
   }
 
   .cont-item {

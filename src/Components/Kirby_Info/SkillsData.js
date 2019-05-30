@@ -73,7 +73,7 @@ export const projects = {
     name3: "Beverage Manager",
     framework3: "React & Redux",
     backend3: "Ruby on Rails",
-    hosted3: "Heroku & AWS",
+    hosted3: "& AWS",
 
     name4: "News Journal",
     framework4: "Vue",
