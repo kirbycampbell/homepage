@@ -64,6 +64,7 @@ export const projects = {
     framework1: "React",
     backend1: "FireStore",
     hosted1: "Heroku",
+    website: "https://siq-blog.herokuapp.com/",
 
     name2: "WhatsApp Clone",
     framework2: "React Hooks",
