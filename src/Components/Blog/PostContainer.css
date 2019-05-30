@@ -13,15 +13,16 @@
 
 /* For Phones & Pads */
 @media only screen and (max-width: 900px) {
-  .container {
-    height: 20%;
+  .container-blog {
+    height: 40%;
     margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
   }
-  .outer-card {
+  .outer-card-blog {
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+
     height: 100%;
     width: 100%;
     margin: auto;
@@ -29,10 +30,11 @@
 
   .boxerson {
     overflow: hidden;
-
-    height: 140px;
-    width: 95%;
+    float: left;
+    height: 160px;
+    width: 100%;
     margin: auto;
+    margin: 1%;
     margin-top: 10px;
     border-radius: 20px;
   }
@@ -47,16 +49,17 @@
   }
 
   .container-image {
-    width: 100%;
     height: 100%;
-    display: grid;
+    min-width: 100%;
+
     position: absolute;
-    z-index: 0;
+    z-index: -100;
+    margin-top: 0%;
     opacity: 0.93;
     filter: brightness(78%);
   }
   .h1-card {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin: auto;
     padding: 0;
