@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .AppResume {
     width: 90%;
     max-width: 1400px;
@@ -155,7 +155,7 @@
 }
 
 /* :::::::::::::::::::::: PHONE VIEW ::::::::::::::::::::::::::: */
-@media screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
   .AppResume {
     width: 90%;
     flex-direction: column;
@@ -304,5 +304,16 @@
   .right-grid {
     float: right;
     width: 100%;
+  }
+}
+
+@media print and (min-width: 200px) {
+  .AppResume {
+    background: white;
+    width: 150%;
+    transform: translateY(-1020px) translateX(-270px) scale(0.7);
+    margin: auto;
+    position: absolute;
+    z-index: 1500;
   }
 }

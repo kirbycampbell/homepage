@@ -12,7 +12,7 @@
 }
 
 /* For Phones & Pads */
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
   .container-blog {
     height: 40%;
     margin-bottom: 20px;
@@ -87,7 +87,7 @@
 }
 
 /* For Desktops */
-@media only screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .container-blog {
     display: flex;
     justify-content: center;

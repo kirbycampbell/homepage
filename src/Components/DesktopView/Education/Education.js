@@ -21,6 +21,14 @@ const Education = () => {
           <div className="explain">{education.college.explain}</div>
         </div>
       </div>
+      <div className="edu-item">
+        <div className="inner-education">{education.Udacity.date}</div>
+        <div className="inner-right-edu">
+          {education.Udacity.name}
+
+          <div className="explain">{education.Udacity.explain}</div>
+        </div>
+      </div>
     </div>
   );
 };

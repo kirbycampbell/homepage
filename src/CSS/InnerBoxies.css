@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel|Cousine|Homemade+Apple|Marck+Script|Maven+Pro|Poiret+One|Unica+One");
 
 /* DESKTOP SCREENS */
-@media only screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   .column-container {
     display: flex;
     flex-direction: row;
@@ -87,7 +87,7 @@
 }
 
 /* PHONE SCREENS */
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
   .column-container {
     display: flex;
 

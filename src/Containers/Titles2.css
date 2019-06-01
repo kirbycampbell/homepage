@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media all and (min-width: 900px) {
   /* :::::::::::: FIRST TITLE SECTION :::::::::::::::: */
   .title {
     display: flex;
@@ -75,7 +75,7 @@
   }
 }
 /* PHONE SCREEEEEEENNNNSSSS */
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
   /* :::::::::::: FIRST TITLE SECTION :::::::::::::::: */
   .title {
     display: flex;
