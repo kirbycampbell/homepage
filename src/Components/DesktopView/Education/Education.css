@@ -49,12 +49,19 @@
 .edu-item:hover {
   background: rgba(116, 74, 196, 0.108);
 }
-@media (max-width: 900px) {
+@media all and (max-width: 900px) {
   .outer-education {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .inner-right-edu {
+    font-size: 12px;
   }
 
   .edu-item {
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .explain {
+    font-size: 11px;
   }
 }

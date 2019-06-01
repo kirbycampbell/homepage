@@ -31,9 +31,9 @@ const Biography = () => {
       <div className="text-box">
         My first forays into the tech/creative world began at 14, when I began
         building my own PCs. I soon became highly skilled at Audio Production -
-        co-producing my groups first album -{" "}
+        co-producing my group's first album -{" "}
         <a
-          href="http://www.offbeat.com/articles/givers-remain-in-light/"
+          href="https://en.wikipedia.org/wiki/Givers"
           target="_blank"
           rel="noopener noreferrer"
         >
