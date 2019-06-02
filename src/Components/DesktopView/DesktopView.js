@@ -24,6 +24,15 @@ const DesktopView = () => {
 
         <div className="main-containerResume">
           {" "}
+          <a
+            href="https://homepagebucket.s3-us-west-2.amazonaws.com/New+Styled+Resume.pdf"
+            className="pdf-btton"
+            target="_blank"
+            data-rel="external"
+            rel="noopener noreferrer"
+          >
+            Click Here For Resume PDF
+          </a>
           <div className="left-sidebar">
             <div className="left-brdr">
               <img
@@ -135,6 +144,15 @@ const DesktopView = () => {
         <div className="main-containerResume">
           {" "}
           <div className="left-sidebar">
+            <a
+              href="https://homepagebucket.s3-us-west-2.amazonaws.com/New+Styled+Resume.pdf"
+              className="pdf-btton"
+              target="_blank"
+              data-rel="external"
+              rel="noopener noreferrer"
+            >
+              Click Here For Resume PDF
+            </a>
             <div className="left-brdr">
               <img
                 className="prof-pic"
