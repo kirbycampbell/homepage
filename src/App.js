@@ -1,23 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import useInterval from "./Functions/useInterval";
 import MainBoxes from "./Containers/MainBoxes";
 import SocialButtons from "./Containers/SocialButtons";
 import Titles from "./Containers/Titles";
 import Footer from "./Containers/Footer";
 import "./App.css";
-//import "./CSS/PhoneView.css";
+import { Route, withRouter } from "react-router-dom";
 
-function App() {
+function App(props) {
   const [introMsg, setIntroMsg] = useState(true);
   const [secondMsg, setSecondMsg] = useState(false);
   const [newTitle, setNewTitle] = useState(false);
   const [skipIntro, setSkipIntro] = useState(false);
+  const [urlParams, setUrlParams] = useState("/main");
 
   useEffect(() => {
     if (localStorage.getItem("visited") === true) {
       setSkipIntro(true);
     }
   }, []);
+
+  useEffect(() => {
+    setUrlParams(props.location.pathname);
+  }, [props.location]);
+  console.log(urlParams);
 
   useInterval(() => {
     if (introMsg) {
@@ -39,10 +45,15 @@ function App() {
         />
         <div className="body-space">
           <SocialButtons introMsg={introMsg} skipIntro={skipIntro} />
-          <MainBoxes
-            introMsg={introMsg}
-            secondMsg={secondMsg}
-            skipIntro={skipIntro}
+          <Route
+            path="/"
+            render={() => (
+              <MainBoxes
+                introMsg={introMsg}
+                secondMsg={secondMsg}
+                skipIntro={skipIntro}
+              />
+            )}
           />
         </div>
       </div>
@@ -51,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
