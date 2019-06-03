@@ -7,41 +7,43 @@ const Titles = props => {
   const [runTimer2, setRunTimer2] = useState(false);
   const [timer, setTimer] = useState(0);
   const [timer2, setTimer2] = useState(0);
-  const [titleName, setTitleName] = useState("title-start");
-  const [titleName2, setTitleName2] = useState("sec-title-start");
+  const [titleName, setTitleName] = useState("title-gone");
+  const [titleName2, setTitleName2] = useState("sec-title-end");
+  // const [titleName, setTitleName] = useState("title-start");
+  // const [titleName2, setTitleName2] = useState("sec-title-start");
 
-  //Intro Message gets timer1 going for Initial Move
-  useEffect(() => {
-    setRunTimer(true);
-  }, [props.introMsg]);
+  // //Intro Message gets timer1 going for Initial Move
+  // useEffect(() => {
+  //   setRunTimer(true);
+  // }, [props.introMsg]);
 
-  useInterval(() => {
-    if (runTimer) {
-      // Timer 1 (Intro Title)
-      setTimer(timer + 1);
-    } else if (runTimer2) {
-      // Timer 2 (Plant Image + Cursive Title)
-      setTimer2(timer2 + 1);
-    }
-  }, 1000);
+  // useInterval(() => {
+  //   if (runTimer) {
+  //     // Timer 1 (Intro Title)
+  //     setTimer(timer + 1);
+  //   } else if (runTimer2) {
+  //     // Timer 2 (Plant Image + Cursive Title)
+  //     setTimer2(timer2 + 1);
+  //   }
+  // }, 1000);
 
-  // FIRST TIMER for STARTING TITLE
-  useEffect(() => {
-    if (timer >= 2) {
-      setTitleName("title-end");
-      setRunTimer(false); // Ends Timer Run
-      setRunTimer2(true); // Starts Timer 2 Run
-    }
-  }, [timer]);
+  // // FIRST TIMER for STARTING TITLE
+  // useEffect(() => {
+  //   if (timer >= 2) {
+  //     setTitleName("title-end");
+  //     setRunTimer(false); // Ends Timer Run
+  //     setRunTimer2(true); // Starts Timer 2 Run
+  //   }
+  // }, [timer]);
 
-  // SECOND TIMER for MAIN LAYOUT Routine
-  useEffect(() => {
-    if (timer2 >= 3) {
-      setTitleName2("sec-title-end");
-      setTitleName("title-gone");
-      setRunTimer2(false);
-    }
-  }, [timer2]);
+  // // SECOND TIMER for MAIN LAYOUT Routine
+  // useEffect(() => {
+  //   if (timer2 >= 3) {
+  //     setTitleName2("sec-title-end");
+  //     setTitleName("title-gone");
+  //     setRunTimer2(false);
+  //   }
+  // }, [timer2]);
 
   return (
     <div>

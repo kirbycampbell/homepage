@@ -32,7 +32,7 @@ class Project {
 }
 let resumeApp = new Project(
   "ResumeApp",
-  "https://pure-waters-94797.herokuapp.com",
+  "https://resume-app.jkirbycampbell.com",
   "React/CSS",
   "Built-in",
   "Fully Responsive Resume app.",
@@ -41,7 +41,7 @@ let resumeApp = new Project(
 );
 let ticHackToe = new Project(
   "Tic Hack Toe",
-  "https://damp-oasis-55552.herokuapp.com",
+  "https://tichacktoe.jkirbycampbell.com",
   "React Hooks",
   "LocalStorage",
   "0, 1, & 2 Player games of 4x4 Tic Tac Toe built with challenging javascript ai!",
@@ -59,7 +59,7 @@ let drinkManager = new Project(
 );
 let blogCreator = new Project(
   "Blog Creator",
-  "https://siq-blog.herokuapp.com/",
+  "https://blog-creator.jkirbycampbell.com",
   "React & Javascript",
   "Google Firestore",
   "Abstract Javascript & React example. Meant to resemble Medium.com.",
@@ -69,7 +69,7 @@ let blogCreator = new Project(
 
 let vintageStore = new Project(
   "Vintage Store",
-  "https://master.d3pkegk0xsoqlf.amplifyapp.com/",
+  "https://vintage-store.jkirbycampbell.com",
   "React & Javascript",
   "LocalStorage",
   "Modern Web Store page, exhibiting css styles & modern functionality.",
@@ -79,7 +79,7 @@ let vintageStore = new Project(
 
 let chatApp = new Project(
   "Instant Messager",
-  "https://master.d2lekjvl9w1h5q.amplifyapp.com/",
+  "https://chat.jkirbycampbell.com",
   "React & GraphQL",
   "MongoDB & AWS Amplify",
   "Instant Subscription based Chat Application.",
@@ -89,7 +89,7 @@ let chatApp = new Project(
 
 let journalApp = new Project(
   "News Site Clone",
-  "https://vue-journal-app-20190524193634-hostingbucket-vue.s3-us-west-2.amazonaws.com/index.html#/",
+  "https://journal-clone.jkirbycampbell.com",
   "Vue js & CSS",
   "AWS Amplify",
   "News page clone from scratch (CFR Clone).",
@@ -99,7 +99,7 @@ let journalApp = new Project(
 
 let meditationApp = new Project(
   "Meditation Timer App",
-  "http://meditation-app-meditation.s3-website-us-west-2.amazonaws.com/",
+  "https://meditation-app.jkirbycampbell.com",
   "React Hooks & Javascript",
   "AWS Amplify",
   "Meditation Timer App with sounds & profiles.",

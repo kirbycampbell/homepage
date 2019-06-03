@@ -6,25 +6,26 @@ import useInterval from "../Functions/useInterval";
 const SocialButtons = props => {
   const [fadeIn, setFadeIn] = useState(false);
   const [count, setCount] = useState(0);
-  const [socialClass, setSocialClass] = useState("social-start");
+  const [socialClass, setSocialClass] = useState("social-end");
+  // const [socialClass, setSocialClass] = useState("social-start");
 
-  useEffect(() => {
-    if (!props.introMsg) {
-      setFadeIn(true);
-    }
-  }, [props.introMsg]);
+  // useEffect(() => {
+  //   if (!props.introMsg) {
+  //     setFadeIn(true);
+  //   }
+  // }, [props.introMsg]);
 
-  useInterval(() => {
-    if (fadeIn) {
-      setCount(count + 1);
-    }
-  }, 1000);
+  // useInterval(() => {
+  //   if (fadeIn) {
+  //     setCount(count + 1);
+  //   }
+  // }, 1000);
 
-  useEffect(() => {
-    if (count >= 2) {
-      setSocialClass("social-end");
-    }
-  }, [count]);
+  // useEffect(() => {
+  //   if (count >= 2) {
+  //     setSocialClass("social-end");
+  //   }
+  // }, [count]);
 
   return (
     <div className={"social-section " + socialClass}>
