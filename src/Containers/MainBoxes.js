@@ -24,50 +24,58 @@ const MainBoxes = props => {
 
   // Intializing Sequence
   useEffect(() => {
-    if (!props.introMsg) {
+    if (props.playIntro) {
       setTimer(true);
+      setMainBoxClass("main-box-start");
+      setBarBoxClass("bar-box-start");
+      setTimer2(false);
     }
-  }, [props.introMsg]);
+  }, [props.playIntro]);
+
   // FIRST VIEW - 4 SQUARES
   useEffect(() => {
-    if (count >= 2) {
-      //setMainBoxClass("main-box-end");
+    if (count >= 2 && timer) {
+      setMainBoxClass("main-box-end");
+      setBarBoxClass("bar-box-start");
       setTimer(false);
       setCount(0);
     }
-  }, [count]);
+  }, [count, timer]);
 
   useEffect(() => {
-    if (pathname !== "/") {
-      setTimer2(true);
+    if (pathname !== "/" && !props.playIntro) {
       setCount2(0);
+      setTimer2(true);
       setMainBoxClass("main-box-hide");
       setViewedItem(pathname.slice(1));
-    } else {
+    } else if (pathname === "/" && !props.playIntro) {
       setCount2(0);
       setTimer2(false);
       setBarBoxClass("bar-box-start");
       setMainBoxClass("main-box-end");
     }
-  }, [pathname]);
-  //console.log(props.history);
+  }, [pathname, props.playIntro]);
 
   // TIMER INTERVALS
   useInterval(() => {
-    if (timer) {
-      setCount(count + 1);
-    } else if (timer2) {
+    if (timer2) {
       setCount2(count2 + 1);
     }
-  }, 500);
+  }, 600);
+  useInterval(() => {
+    if (timer) {
+      setCount(count + 1);
+    }
+  }, 1000);
+
   // SECOND VIEW - BAR BOXES
   useEffect(() => {
-    if (count2 >= 2) {
+    if (count2 >= 2 && !props.playIntro) {
       setBarBoxClass("bar-box-end");
       setTimer2(false);
       setCount2(0);
     }
-  }, [count2]);
+  }, [count2, props.playIntro]);
 
   const handleClick = item => {
     setViewedItem(item);
@@ -104,7 +112,6 @@ const MainBoxes = props => {
           handleBarClick={handleBarClick}
           viewedItem={viewedItem}
           Xout={Xout}
-          timer={timer}
         />
       </div>
     </div>
