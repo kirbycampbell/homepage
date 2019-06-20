@@ -38,6 +38,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fab fa-github social-item" />
+        <div className="btn-explain">GitHub</div>
       </a>
       <a
         href="https://twitter.com/CoderDabe1000"
@@ -46,6 +47,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fab fa-twitter social-item" />
+        <div className="btn-explain">Twitter</div>
       </a>
       <a
         href="https://www.linkedin.com/in/jkirbycampbell/"
@@ -54,6 +56,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fab fa-linkedin social-item" />
+        <div className="btn-explain">LinkedIn</div>
       </a>
 
       <a
@@ -69,6 +72,7 @@ const SocialButtons = props => {
           }
           alt="angel_list"
         />
+        <div className="btn-explain">Angellist</div>
       </a>
       <a
         href="https://github.com/kirbycampbell"
@@ -77,6 +81,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fas fa-share-alt social-item" />
+        <div className="btn-explain">Share</div>
       </a>
       <a
         href="https://open.spotify.com/playlist/5ieGTsbB6X0QlfGmJR7Grs"
@@ -85,6 +90,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fab fa-spotify social-item" />
+        <div className="btn-explain">Spotify</div>
       </a>
     </div>
   );
