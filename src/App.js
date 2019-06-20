@@ -8,18 +8,18 @@ import { withRouter } from "react-router-dom";
 import useInterval from "./Functions/useInterval";
 
 function App(props) {
-  const [playIntro, setPlayIntro] = useState(null);
+  const [playIntro, setPlayIntro] = useState(true);
   const [count, setCount] = useState(0);
 
   // This Checks to see if the user has visited the site before
   useEffect(() => {
     if (localStorage.getItem("visited") === "yep") {
-      setPlayIntro(false);
+      //setPlayIntro(false);
       console.log("the site was visited!");
       //localStorage.setItem("visited", "nope");
     }
     if (localStorage.getItem("visited") !== "yep") {
-      setPlayIntro(true);
+      //setPlayIntro(true);
     }
   }, []);
 
