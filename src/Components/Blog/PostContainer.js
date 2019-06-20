@@ -85,10 +85,11 @@ class PostContainer extends Component {
 
             return (
               <a
-                //href={"https://blog-creator.jkirbycampbell.com/Post/" + post.id}
-                href={"https://siq-blog.herokuapp.com/Post/" + post.id}
+                href={"https://blog-creator.jkirbycampbell.com/Post/" + post.id}
                 key={post.id}
                 className="boxerson"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div
                   id={post.id}
