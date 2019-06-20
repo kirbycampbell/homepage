@@ -74,7 +74,7 @@ const SocialButtons = props => {
         />
         <div className="btn-explain">Angellist</div>
       </a>
-      <a
+      {/* <a
         href="https://github.com/kirbycampbell"
         target="_blank"
         rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const SocialButtons = props => {
       >
         <i className="fas fa-share-alt social-item" />
         <div className="btn-explain">Share</div>
-      </a>
+      </a> */}
       <a
         href="https://open.spotify.com/playlist/5ieGTsbB6X0QlfGmJR7Grs"
         target="_blank"

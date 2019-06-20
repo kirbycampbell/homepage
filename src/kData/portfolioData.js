@@ -31,7 +31,7 @@ class Project {
   }
 }
 let resumeApp = new Project(
-  "ResumeApp",
+  "Interactive Resume",
   "https://resume-app.jkirbycampbell.com",
   "React",
   "HTML/CSS",
@@ -40,7 +40,7 @@ let resumeApp = new Project(
   "https://i.imgur.com/lxfHGh9.jpg"
 );
 let ticHackToe = new Project(
-  "Tic Hack Toe",
+  "4X4 ~ Tic Hack Toe Game",
   "https://tichacktoe.jkirbycampbell.com",
   "React Hooks",
   "LocalStorage",
@@ -49,7 +49,7 @@ let ticHackToe = new Project(
   "https://i.imgur.com/1tTko6L.jpg"
 );
 let drinkManager = new Project(
-  "Drink Manager",
+  "Drink Manager App",
   "https://the-one-who-works.herokuapp.com/",
   "React/Redux",
   "Rails API",
@@ -98,7 +98,7 @@ let journalApp = new Project(
 );
 
 let meditationApp = new Project(
-  "Meditation Timer App",
+  "Meditation Timer",
   "https://meditation-app.jkirbycampbell.com",
   "React Hooks",
   "Javascript",
@@ -107,15 +107,37 @@ let meditationApp = new Project(
   "https://i.imgur.com/OrbbDks.jpg"
 );
 
+let artistcplusplusapp = new Project(
+  "C++ Artist Management CLI",
+  "https://github.com/kirbycampbell/LinkedListOverloadExperiments/blob/master/imp.cpp",
+  "C++",
+  "Virtual Pointers",
+  "Example C++ Project showcasing virtual pointers & memory mgmt.",
+  "https://github.com/kirbycampbell/LinkedListOverloadExperiments/blob/master/imp.cpp",
+  "https://i.imgur.com/P2Pq1wp.jpg"
+);
+
+let pdxOutdoor = new Project(
+  "Outdoor Activity Ruby Project",
+  "https://github.com/kirbycampbell/pdx-outdoor",
+  "Ruby",
+  "Web Scraping",
+  "A Ruby Project I created for Flatiron's Ruby Final Section",
+  "https://github.com/kirbycampbell/pdx-outdoor/blob/master/lib/activities/hike.rb",
+  "https://i.imgur.com/g8J7Ycq.jpg"
+);
+
 const projects = [
-  resumeApp,
-  ticHackToe,
-  drinkManager,
-  blogCreator,
-  vintageStore,
   chatApp,
+  blogCreator,
+  ticHackToe,
+  resumeApp,
+  vintageStore,
   journalApp,
-  meditationApp
+  drinkManager,
+  meditationApp,
+  artistcplusplusapp,
+  pdxOutdoor
 ];
 
 export { projects };
