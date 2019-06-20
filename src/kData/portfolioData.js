@@ -33,8 +33,8 @@ class Project {
 let resumeApp = new Project(
   "ResumeApp",
   "https://resume-app.jkirbycampbell.com",
-  "React/CSS",
-  "Built-in",
+  "React",
+  "HTML/CSS",
   "Fully Responsive Resume app.",
   "https://github.com/kirbycampbell/kirby-resume/tree/master/src",
   "https://i.imgur.com/lxfHGh9.jpg"
@@ -80,8 +80,8 @@ let vintageStore = new Project(
 let chatApp = new Project(
   "Instant Messager",
   "https://chat.jkirbycampbell.com",
-  "React & GraphQL",
-  "MongoDB & AWS Amplify",
+  "React",
+  "MongoDB & GraphQL",
   "Instant Subscription based Chat Application.",
   "https://github.com/kirbycampbell/chatterson-chatapp/tree/master/src",
   "https://i.imgur.com/nhWZSTd.jpg"
@@ -91,7 +91,7 @@ let journalApp = new Project(
   "News Site Clone",
   "https://journal-clone.jkirbycampbell.com",
   "Vue js & CSS",
-  "AWS Amplify",
+  "AWS",
   "News page clone from scratch (CFR Clone).",
   "https://github.com/kirbycampbell/journalapp/tree/master/src",
   "https://i.imgur.com/IPZYU3e.jpg"
@@ -100,8 +100,8 @@ let journalApp = new Project(
 let meditationApp = new Project(
   "Meditation Timer App",
   "https://meditation-app.jkirbycampbell.com",
-  "React Hooks & Javascript",
-  "AWS Amplify",
+  "React Hooks",
+  "Javascript",
   "Meditation Timer App with sounds & profiles.",
   "https://github.com/kirbycampbell/meditation-timer-hooks/tree/master/src",
   "https://i.imgur.com/OrbbDks.jpg"

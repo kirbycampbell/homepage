@@ -31,17 +31,51 @@ const SocialButtons = props => {
 
   return (
     <div className={"social-section " + socialClass}>
-      <i className="fab fa-google social-item" />
-      <a href="https://github.com/kirbycampbell" className="linker">
+      <a
+        href="https://github.com/kirbycampbell"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linker"
+      >
         <i className="fab fa-github social-item" />
       </a>
-      <a href="https://twitter.com/CoderDabe1000" className="linker">
+      <a
+        href="https://twitter.com/CoderDabe1000"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linker"
+      >
         <i className="fab fa-twitter social-item" />
       </a>
-      <a href="https://www.linkedin.com/in/jkirbycampbell/" className="linker">
+      <a
+        href="https://www.linkedin.com/in/jkirbycampbell/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linker"
+      >
         <i className="fab fa-linkedin social-item" />
       </a>
-      <a href="https://github.com/kirbycampbell" className="linker">
+
+      <a
+        href="https://angel.co/kirby-campbell?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sidebar"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linker"
+      >
+        <img
+          className="social-item social-img"
+          src={
+            "https://cdn2.iconfinder.com/data/icons/font-awesome/1792/angellist-512.png"
+          }
+          alt="angel_list"
+        />
+      </a>
+      <a
+        href="https://github.com/kirbycampbell"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linker"
+      >
         <i className="fas fa-share-alt social-item" />
       </a>
       <a

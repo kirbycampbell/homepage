@@ -60,6 +60,18 @@
     z-index: 2;
     opacity: 1;
   }
+
+  .social-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: black;
+    margin: 0px 5%;
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
 
 /* PHONE SCREENS */
@@ -122,5 +134,17 @@
     height: 20%;
     z-index: 2;
     opacity: 1;
+  }
+
+  .social-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    color: black;
+    margin: 0px 5%;
+    cursor: pointer;
+    opacity: 0.7;
   }
 }
