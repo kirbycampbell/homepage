@@ -9,4 +9,6 @@ I built this app using React Hooks, lots of Javascript functions, custom CSS ani
 An example of the custom javascript & animations can be best seen in [Titles.js](https://github.com/kirbycampbell/homepage/blob/master/src/Containers/Titles.js) from this project.
 These timer hooks that connect to css changes affect components like in [BarBoxes.js](https://github.com/kirbycampbell/homepage/blob/master/src/Containers/BarBoxies.js).
 
-View my [LinkedIn Profile](https://www.linkedin.com/in/jkirbycampbell/)
+View my [LinkedIn Profile](https://www.linkedin.com/in/jkirbycampbell/).
+
+Thanks
