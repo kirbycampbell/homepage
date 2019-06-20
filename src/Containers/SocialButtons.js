@@ -31,18 +31,24 @@ const SocialButtons = props => {
 
   return (
     <div className={"social-section " + socialClass}>
-      <i className="fab fa-google social-item" />
+      <i className="fab fa-google social-item">
+        <span className="tooltiptext">Tooltip text</span>
+      </i>
       <a href="https://github.com/kirbycampbell" className="linker">
         <i className="fab fa-github social-item" />
+        <span className="tooltiptext">Tooltip text</span>
       </a>
       <a href="https://twitter.com/CoderDabe1000" className="linker">
         <i className="fab fa-twitter social-item" />
+        <span className="tooltiptext">Tooltip text</span>
       </a>
       <a href="https://www.linkedin.com/in/jkirbycampbell/" className="linker">
         <i className="fab fa-linkedin social-item" />
+        <span className="tooltiptext">Tooltip text</span>
       </a>
       <a href="https://github.com/kirbycampbell" className="linker">
         <i className="fas fa-share-alt social-item" />
+        <span className="tooltiptext">Tooltip text</span>
       </a>
       <a
         href="https://open.spotify.com/playlist/5ieGTsbB6X0QlfGmJR7Grs"
@@ -51,6 +57,7 @@ const SocialButtons = props => {
         className="linker"
       >
         <i className="fab fa-spotify social-item" />
+        <span className="tooltiptext">Tooltip text</span>
       </a>
     </div>
   );
