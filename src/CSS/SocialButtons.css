@@ -168,4 +168,14 @@
     cursor: pointer;
     opacity: 0.7;
   }
+
+  .btn-explain {
+    position: absolute;
+    opacity: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 0px;
+    margin-top: 0px;
+    transition: all 0.5s ease;
+  }
 }
