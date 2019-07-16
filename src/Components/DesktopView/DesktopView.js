@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DesktopView.css";
 import SkillList from "./Skills/SkillList";
 import ProjectContainerD from "./Projects/ProjectContainerD";
@@ -9,6 +9,7 @@ import ProgramsD from "./Programs/ProgramsD";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const DesktopView = () => {
+  const [popup, setPopup] = useState(false);
   const phoneScreen = useMediaQuery("(max-width:900px)");
   const DesktopScreen = useMediaQuery("(min-width:900px)");
 
@@ -133,7 +134,16 @@ const DesktopView = () => {
     );
   } else if (DesktopScreen && !phoneScreen) {
     return (
-      <div className="AppResume">
+      <div className="AppResume" onClick={() => setPopup(false)}>
+        {popup && (
+          <div className="popup">
+            <img
+              className="popimg"
+              src="https://i.imgur.com/BvdMGYg.jpg"
+              alt="https://i.imgur.com/BvdMGYg.jpg"
+            />
+          </div>
+        )}
         <div className="name-bnr">
           <h1>Kirby Campbell</h1>
         </div>
@@ -253,7 +263,7 @@ const DesktopView = () => {
               <div className="divider" />
               <div className="titles">Education</div>
               <div className="divider" />
-              <Education />
+              <Education setPopup={setPopup} />
             </div>
           </div>
         </div>

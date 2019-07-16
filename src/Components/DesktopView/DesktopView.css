@@ -163,6 +163,12 @@
     border-radius: 10px;
     text-align: center;
   }
+
+  .popup {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
 }
 
 /* :::::::::::::::::::::: PHONE VIEW ::::::::::::::::::::::::::: */

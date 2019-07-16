@@ -27,8 +27,9 @@
   .main-box-hide {
     opacity: 0;
     height: 0px;
-    transition: opacity 1.2s, height 1.2s ease-in-out;
+    transition: opacity 1.2s, height 1.2s, ease-in-out;
     z-index: -100;
+    overflow: hidden;
   }
 
   .bar-box-start {
