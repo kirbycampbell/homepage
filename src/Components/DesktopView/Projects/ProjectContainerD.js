@@ -18,7 +18,8 @@ const ProjectContainerD = () => {
             {projects.portfolio.name1}
             <div className="showDetails-desk">
               <br /> Framework: {projects.portfolio.framework1}
-              Backend: {projects.portfolio.backend1}{" "}
+              <br />
+              Backend: {projects.portfolio.backend1}
               {projects.portfolio.hosted1}
             </div>
           </a>
@@ -44,6 +45,8 @@ const ProjectContainerD = () => {
             {projects.portfolio.name5}
             <div className="showDetails-desk">
               Framework: {projects.portfolio.framework5}
+              <br />
+              Backend: {projects.portfolio.backend5}
             </div>
           </a>
         </div>

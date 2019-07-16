@@ -99,7 +99,7 @@ const Biography = () => {
         {" "}
         <img
           className="pic-img"
-          src="https://i.imgur.com/kaAFJgn.jpg"
+          src="https://i.imgur.com/r9lyIsI.jpg"
           alt="skills-section"
         />
       </div>

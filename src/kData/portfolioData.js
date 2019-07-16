@@ -127,12 +127,23 @@ let pdxOutdoor = new Project(
   "https://i.imgur.com/g8J7Ycq.jpg"
 );
 
+let statusVue = new Project(
+  "Status Vue (Twitter Knockoff)",
+  "https://status-vue.jkirbycampbell.com",
+  "Vue & Node.js",
+  "Express & MongoDB",
+  "Full Stack Project featuring Node.js, Vue, Express.js, and MongoDB backend.",
+  "https://github.com/kirbycampbell/backend-express/blob/master/server/routes/api/posts.js",
+  "https://pbs.twimg.com/media/D-bLKyyUEAAKILn?format=jpg&name=4096x4096"
+);
+
 const projects = [
   chatApp,
   blogCreator,
   ticHackToe,
-  resumeApp,
+  statusVue,
   vintageStore,
+  resumeApp,
   journalApp,
   drinkManager,
   meditationApp,
