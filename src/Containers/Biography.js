@@ -4,14 +4,19 @@ import "./Biography.css";
 const Biography = () => {
   return (
     <div className="bio-outer">
-      <div className="vid-box">
-        <iframe
+      <div className="pic-box">
+        {/* <iframe
           title="Kirbys Intro"
           src="https://www.youtube.com/embed/EDyVeFEnhv0"
           width="100%"
           height="100%"
           frameBorder="0"
           allow="autoplay; encrypted-media"
+        /> */}
+        <img
+          className="pic-img too-tall"
+          src="https://i.imgur.com/fledmYr.jpg"
+          alt="Selfie"
         />
       </div>
       <div className="text-box">
@@ -125,14 +130,14 @@ const Biography = () => {
         my creative life and I would love to chat if you are interested in
         hiring me or learning more! Contact info is below - Thanks!
       </div>
-      <div className="pic-box">
+      {/* <div className="pic-box">
         {" "}
         <img
           className="pic-img"
           src="https://i.imgur.com/wcWWr3e.jpg"
           alt="goodbye"
         />
-      </div>
+      </div> */}
       <div>-Kirby</div>
     </div>
   );
