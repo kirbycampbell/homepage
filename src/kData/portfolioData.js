@@ -54,7 +54,7 @@ let drinkManager = new Project(
   "React/Redux",
   "Rails API",
   "Final Project for Flatiron FullStack Bootcamp.",
-  "https://github.com/kirbycampbell/oceanx/tree/master/src",
+  "https://github.com/kirbycampbell/oceanx",
   "https://i.imgur.com/Y6h9V9h.jpg"
 );
 let blogCreator = new Project(
