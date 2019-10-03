@@ -57,7 +57,7 @@ const DesktopView = () => {
               </a>
               <i className="far fa-envelope" />
 
-              <a className="cont-item" href="mailto://jkirbycampbell@gmail.com">
+              <a className="cont-item" href="mailto:jkirbycampbell@gmail.com">
                 jkirbycampbell@gmail.com
               </a>
               <i className="fas fa-map-pin" />
@@ -185,7 +185,7 @@ const DesktopView = () => {
               </a>
               <i className="far fa-envelope" />
 
-              <a className="cont-item" href="mailto://jkirbycampbell@gmail.com">
+              <a className="cont-item" href="mailto:jkirbycampbell@gmail.com">
                 jkirbycampbell@gmail.com
               </a>
               <i className="fas fa-map-pin" />
